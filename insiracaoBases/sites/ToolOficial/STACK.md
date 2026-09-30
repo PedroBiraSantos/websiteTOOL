@@ -1,0 +1,24 @@
+- **Shopify** — hosted e-commerce platform serving the store (store.toolband.com): sections, cart, checkout, CDN image resizing via `srcset`
+- **Dawn 15.4.0** — Shopify's reference theme ("2026_0211_1.0_PR" build): colour schemes, grid, cards, slideshow, sliders, header/drawer, footer
+- **Web Components (Custom Elements)** — Dawn's `slideshow-component`, `slider-component`, `header-drawer`, `details-modal`, `cart-drawer`, `localization-form`, `predictive-search`
+- **Dawn scroll animations** — `scroll-trigger` slide-in / fade-in reveals driven by IntersectionObserver
+- **System font stack (Helvetica, Arial)** — all body and heading text; no web fonts
+- **Custom store CSS** — gold gradient separators, uppercase letter-spaced menus and titles, textured section backgrounds
+- **Shopify AI-generated theme block** — the Tour / T-Shirts / Sale / Accessories image grid with animated GIF hover swap
+- **Shopify Localization (country/region selector)** — 221 markets with per-country currency in the menu drawer
+- **Shopify Predictive Search** — search modal with live suggestions
+- **Shop Pay / Sign in with Shop** — Shop Pay config, shop-cart-sync, accelerated checkout buttons
+- **Shopify dynamic checkout + PayPal** — payment-button bootstrap and PayPal visibility tracking
+- **Apple Pay** — shop capabilities JSON and private access token check on Safari
+- **hCaptcha (Shopify captcha bootstrap)** — bot protection for contact, account and comment forms
+- **Shopify privacy banner** — cookie/consent banner (`storefront-banner.js`)
+- **Shopify WebMCP** — Model Context Protocol adapter exposing store actions to AI agents
+- **Locksmith** — access-control app gating Tool Army exclusive products
+- **Limitsify / MinMaxify** — cart quantity limits with SweetAlert2-styled popups
+- **Okendo Reviews** — reviews widget styles and settings (star ratings on cards come from Dawn product metafields)
+- **GSC Countdown Timer (Getsitecontrol)** — countdown bar above the announcement (ends 1 Oct 2026, then hides)
+- **Google tag (GA4) with Consent Mode** — pageview and event tracking
+- **Attentive** — SMS/email marketing tag
+- **Shopify Analytics (Trekkie, Web Pixels Manager, perf kit, shop events listener)** — storefront analytics and pixel sandbox iframes
+- **Speculation Rules API** — empty prefetch rule set
+- **Schema.org JSON-LD** — Organization and WebSite structured data

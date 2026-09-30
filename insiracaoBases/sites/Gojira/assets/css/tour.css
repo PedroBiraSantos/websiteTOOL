@@ -1,0 +1,341 @@
+/* Tour section: heading, background art, boat/fish-tail decorations and full Bandsintown widget reskin */
+.tour_heading {
+    font-size: 2.0833vw;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2083vw;
+    z-index: 1;
+    position: relative;
+}
+div#block-bartik-reskintourblockdom {
+    position: relative;
+    width: 100%;
+    padding-top: 2.6563vw;
+    min-height: 95vw;
+    padding-bottom:5vw;
+}
+.tour_BG_section {
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    z-index: 0;
+    width: 100%;
+}
+.tour_desktop_image {
+    position: relative;
+}
+.tour_mobile_image {
+    display: none;
+}
+.boat_image {
+    position: absolute;
+    top: 76.4583vw;
+    left: 7.7604vw;
+    width: 12.1875vw;
+    z-index: 1;
+}
+.fish_tail {
+    position: absolute;
+    top: 86.3083vw;
+    right: 0vw;
+    width: 7.7042vw;
+}
+.TourWrapper {
+    width: 26vw;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+.bit-widget .bit-event {
+    line-height: normal;
+    padding: 0vw;
+}
+.TourWrapper .bit-widget.bit-layout-desktop .bit-event,
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event,
+.bit-widget .bit-event,
+.bit-event {
+    padding: 0vw;
+    display: flex;
+    border: none;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 2.4479vw;
+}
+.TourWrapper .bit-widget a.bit-top-track-button,
+.TourWrapper .bit-widget a.bit-top-track-button span {
+    font-size: 0.7292vw;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.0729vw;
+    padding: 0vw;
+    text-align: center;
+    padding-bottom: 1.9792vw;
+    padding-top: 2.0313vw;
+}
+.TourWrapper .bit-nav-bar-container {
+    display: none;
+}
+.TourWrapper .bit-widget .bit-upcoming-events,
+.TourWrapper .bit-widget .bit-past-events {
+    margin: 0vw;
+    border: none !important;
+}
+.TourWrapper .bit-widget a.bit-top-track-button span {
+    color: #75929E;
+}
+.TourWrapper .bit-widget.bit-layout-desktop .bit-details,
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-details,
+.bit-event .bit-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5729vw;
+}
+.TourWrapper .bit-widget.bit-layout-desktop .bit-details div,
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-details div,
+.bit-event .bit-details div {
+    width: 100%;
+    text-align: center;
+}
+.TourWrapper .bit-widget.bit-layout-desktop .bit-date,
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-date,
+.bit-event .bit-date {
+    min-width: auto;
+    margin: 0vw;
+    font-size: 0.8333vw;
+    letter-spacing: 0.08333vw;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.TourWrapper .bit-widget.bit-layout-desktop .bit-titleWrapper,
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-titleWrapper,
+.bit-event .bit-titleWrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+.TourWrapper .bit-widget.bit-layout-desktop .bit-titleWrapper .bit-venue,
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-titleWrapper .bit-venue,
+.bit-event .bit-titleWrapper .bit-venue {
+    min-width: auto;
+    margin: 0vw;
+    font-size: 0.8333vw;
+    letter-spacing: 0.08333vw;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-bottom: 0.5729vw;
+}
+.TourWrapper .bit-widget.bit-layout-desktop .bit-titleWrapper .bit-location,
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-titleWrapper .bit-location,
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-location,
+.bit-event .bit-titleWrapper .bit-location {
+    min-width: auto;
+    margin: 0vw;
+    font-size: 0.8333vw;
+    letter-spacing: 0.08333vw;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-details.bit-event-buttons,
+.TourWrapper .bit-widget.bit-layout-desktop .bit-event .bit-details.bit-event-buttons,
+.bit-event .bit-details.bit-event-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5104vw;
+    margin-left: 0vw;
+    gap: 1.0417vw;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-rsvp-container,
+.TourWrapper .bit-widget.bit-layout-desktop .bit-event .bit-rsvp-container,
+.bit-event .bit-rsvp-container {
+    margin: 0vw;
+}
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-details .bit-rsvp-container,
+.TourWrapper .bit-widget.bit-layout-desktop .bit-event .bit-details .bit-rsvp-container,
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-details .bit-offers-container.bit-single-cta,
+.TourWrapper .bit-widget.bit-layout-desktop .bit-event .bit-details .bit-offers-container.bit-single-cta,
+.bit-event .bit-details .bit-rsvp-container,
+.bit-event .bit-details .bit-offers-container.bit-single-cta {
+    width: 6.3021vw;
+    line-height: 2.3438vw;
+    height: 2.3438vw;
+    flex-basis: auto;
+    margin: 0vw;
+}
+.bit-widget .bit-event .bit-rsvp-container {
+    margin: 0vw;
+}
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-button,
+.TourWrapper .bit-widget.bit-layout-desktop .bit-event .bit-button,
+.bit-event .bit-button,
+.bit-widget .bit-event .bit-rsvp {
+    min-width: unset;
+    margin: 0vw !important;
+    margin-right: 0vw;
+    width: 6.3021vw;
+    line-height: 2.3438vw;
+    height: 2.3438vw;
+    font-size: 0.8333vw;
+    letter-spacing: 0.0833vw;
+    text-transform: uppercase;
+    border: 1px solid #75929E;
+    color: #ffffff;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: transparent;
+}
+.bit-widget .bit-event .bit-offers-text {
+    line-height: normal;
+    font-size: 0.8333vw;
+}
+.TourWrapper .bit-play-my-city-button {
+    display: none !important;
+}
+.bit-widget .bit-event .bit-button {
+    line-height: 2.3438vw;
+}
+.TourWrapper .bit-widget.bit-layout-desktop .bit-event:last-child,
+.TourWrapper .bit-widget.bit-layout-ipad .bit-event:last-child,
+.bit-event:last-child {
+    padding-bottom: 0vw;
+}
+.bit-widget {
+    min-width: unset;
+    padding: 0vw;
+}
+@media only screen and (max-width:1024px) and (orientation:portrait) {
+    .tour_heading {
+        padding-top: 7.4667vw;
+        font-size: 9.0667vw;
+        letter-spacing: 0.9067vw;
+    }
+    .tour_BG_section {
+        top: 3vw;
+    }
+    .design_images {
+        position: relative;
+        margin-top: 16.7253vw;
+        min-height: 33vh;
+    }
+    .boat_image {
+        top: 0vw;
+        width: 41.0213vw;
+        left: 11.7333vw;
+    }
+    .fish_tail {
+        top: 0vw;
+        width: 23.7333vw;
+    }
+    .TourWrapper {
+        min-height: 30vh;
+        width: 92.0000vw
+    }
+    .TourWrapper .bit-widget a.bit-top-track-button,
+    .TourWrapper .bit-widget a.bit-top-track-button span {
+        width: 54.6667vw;
+        margin: 0 auto;
+        font-size: 2.6667vw;
+        letter-spacing: 0.26667vw;
+        padding-top: 6.1333vw;
+        padding-bottom: 8.5333vw;
+    }
+    .TourWrapper .bit-widget .bit-event {
+        text-decoration: none;
+        padding: 0vw;
+        line-height: normal;
+        border: none;
+        padding-bottom: 13.8667vw;
+    }
+    .TourWrapper .bit-widget a {
+        text-align: center;
+    }
+    .TourWrapper .bit-widget.bit-layout-desktop .bit-date,
+    .TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-date {
+        font-weight: 400;
+        font-size: 3.2vw;
+        letter-spacing: 0.32vw;
+        text-transform: uppercase;
+        font-family: "times-new-roman", sans-serif;
+        font-style: normal;
+        /* padding-bottom: 2.6667vw; */
+    }
+    .TourWrapper .bit-widget.bit-layout-desktop .bit-titleWrapper .bit-venue,
+    .TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-titleWrapper .bit-venue {
+        font-weight: 400;
+        font-size: 3.2vw;
+        letter-spacing: 0.32vw;
+        text-transform: uppercase;
+        font-family: "times-new-roman", sans-serif;
+        font-style: normal;
+        padding-bottom: 1vw;
+    }
+    .TourWrapper .bit-widget.bit-layout-desktop .bit-titleWrapper .bit-location,
+    .TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-titleWrapper .bit-location,
+    .TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-location {
+        font-weight: 400;
+        font-size: 3.2vw;
+        letter-spacing: 0.32vw;
+        text-transform: uppercase;
+        font-family: "times-new-roman", sans-serif;
+        font-style: normal;
+    }
+    .TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-details.bit-event-buttons,
+    .TourWrapper .bit-widget.bit-layout-desktop .bit-event .bit-details.bit-event-buttons {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        margin: 0vw;
+        gap: 2.6667vw;
+        margin-top: 5.3333vw;
+    }
+    .TourWrapper .bit-widget.bit-layout-desktop .bit-event,
+    .TourWrapper .bit-widget.bit-layout-ipad .bit-event {
+        padding-bottom: 13.8667vw;
+    }
+    .TourWrapper .bit-widget.bit-layout-desktop .bit-details,
+    .TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-details {
+        gap: 1vw;
+    }
+    .TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-details .bit-rsvp-container,
+    .TourWrapper .bit-widget.bit-layout-desktop .bit-event .bit-details .bit-rsvp-container,
+    .TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-details .bit-offers-container.bit-single-cta,
+    .TourWrapper .bit-widget.bit-layout-desktop .bit-event .bit-offers-container.bit-single-cta,
+    .TourWrapper .bit-widget.bit-layout-desktop .bit-event .bit-details .bit-offers-container.bit-single-cta {
+        width: 21.3333vw;
+        line-height: 8.0000vw;
+        height: 8.0000vw;
+        flex-basis: auto;
+    }
+    .TourWrapper .bit-widget.bit-layout-ipad .bit-event .bit-button,
+    .TourWrapper .bit-widget.bit-layout-desktop .bit-event .bit-button {
+        width: 21.3333vw;
+        line-height: 8.0000vw;
+        height: 8.0000vw;
+        font-size: 3.2000vw;
+        letter-spacing: 0.32000vw;
+    }
+    .bit-widget .bit-event .bit-offers-text {
+        font-size: 3.2000vw;
+    }
+    .tour_desktop_image {
+        display: none;
+    }
+    .tour_mobile_image {
+        display: block;
+    }
+}

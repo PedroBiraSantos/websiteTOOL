@@ -1,0 +1,4 @@
+/* Cart drawer pre-paint guard (hidden until the drawer component opens it) */
+.drawer {
+  visibility: hidden;
+}

@@ -1,0 +1,164 @@
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+ul, ol, li {
+	padding: 0;
+	margin: 0;
+}
+
+.jp-container {width: 450px;}
+
+.jp-left {float: left;}
+.jp-right {float: right;}
+
+.jp-container,
+.jp-container a {
+	color: #c1a045;
+	font: 9px/19px verdana, arial, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.jp-container a {
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.jplayer-controls {
+	height: 27px;
+	background: #221706;
+	margin-bottom: 3px;
+}
+
+.jplayer-controls li {
+	display: inline-block;
+}
+
+.jplayer-controls a {
+	display: inline-block;
+	height: 19px;
+	padding: 4px 16px;
+}
+
+.jplayer-controls a:hover {
+	background: #5c7549;
+}
+
+.jp-play a, .jp-pause a {
+	width: 302px;
+}
+
+.jp-previous a {
+	width: 25px;
+	text-align: center;
+}
+
+.jp-next a {
+	width: 25px;
+	text-align: center;
+}
+
+.jp-previous, .jp-next {border-left: 1px dashed #0a0500;}
+
+.jplayer-controls-sec {
+	margin-bottom: 10px;
+}
+
+.jp-progress {
+	background: #221706;
+	height: 7px;
+	margin-right: 1px;
+	width: 392px;
+}
+
+.jp-seek-bar {
+	height: 7px;
+	background: #221706;
+}
+
+.jp-play-bar {
+	height: 7px;
+	width: 4px;
+	background: #5c7549;
+	border-right: 4px solid #c1a045;
+}
+
+.jp-volume-bar {
+	width: 57px;
+	height: 7px;
+	background: url('img/vol-down.gif');
+}
+
+.jp-volume-bar-value {
+	background: url('img/vol-up.gif');
+	height: 7px;
+}
+
+/* playlist */
+
+.jp-playlist li {
+	list-style: none;
+	background: #221706;
+	margin-bottom: 1px;
+}
+
+.jp-playlist li .jp-playlist-item {
+	display: block;
+	float: left;
+	padding: 4px 12px;
+	height: 20px;
+	width: 370px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.jp-playlist li:hover {
+	background: #5c7549;
+}
+
+.jp-playlist li.jp-playlist-current {
+	background: #5c7549;
+}
+
+.jp-playlist .amazon-buy-link,
+.jp-playlist .itunes-buy-link {
+	display: block;
+	float: right;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999px;
+	margin-top: 6px;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.jp-playlist .amazon-buy-link {
+	margin-right: 12px;
+	background: url('img/amazon.png') no-repeat;	
+}
+
+.jp-playlist .itunes-buy-link {
+	margin-right: 3px;
+	background: url('img/itunes.png') no-repeat;
+}
+
+.jp-playlist li:hover .amazon-buy-link,
+.jp-playlist li:hover .itunes-buy-link,
+.jp-playlist li.jp-playlist-current .amazon-buy-link,
+.jp-playlist li.jp-playlist-current .itunes-buy-link {
+	opacity: 0.6;
+}
+
+.jp-playlist li:hover .amazon-buy-link:hover,
+.jp-playlist li:hover .itunes-buy-link:hover {
+	opacity: 1;
+}

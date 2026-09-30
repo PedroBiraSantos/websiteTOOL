@@ -1,0 +1,106 @@
+/* Hero + album slideshows: 37.5% / 100% aspect boxes, per-slide overlay opacity, hover zoom on the album banner */
+@media screen and (max-width: 749px) {
+      #Slider-template--27815670284605__slideshow_desktop_qW4DKG::before,
+      #Slider-template--27815670284605__slideshow_desktop_qW4DKG .media::before,
+      #Slider-template--27815670284605__slideshow_desktop_qW4DKG:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: 37.5%;
+        content: '';
+        display: block;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #Slider-template--27815670284605__slideshow_desktop_qW4DKG::before,
+      #Slider-template--27815670284605__slideshow_desktop_qW4DKG .media::before {
+        padding-bottom: 37.5%;
+        content: '';
+        display: block;
+      }
+    }
+#Slide-template--27815670284605__slideshow_desktop_qW4DKG-1 .banner__media::after {
+  opacity: 0.0;
+}
+#Slide-template--27815670284605__slideshow_desktop_qW4DKG-2 .banner__media::after {
+  opacity: 0.0;
+}
+#Slide-template--27815670284605__slideshow_desktop_qW4DKG-3 .banner__media::after {
+  opacity: 0.0;
+}
+#Slide-template--27815670284605__slideshow_desktop_qW4DKG-4 .banner__media::after {
+  opacity: 0.0;
+}
+#Slide-template--27815670284605__slideshow_desktop_qW4DKG-5 .banner__media::after {
+  opacity: 0.0;
+}
+@media screen and (max-width: 749px) {
+      #Slider-template--27815670284605__slideshow_mobile_FGkMn8::before,
+      #Slider-template--27815670284605__slideshow_mobile_FGkMn8 .media::before,
+      #Slider-template--27815670284605__slideshow_mobile_FGkMn8:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: 100.0%;
+        content: '';
+        display: block;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #Slider-template--27815670284605__slideshow_mobile_FGkMn8::before,
+      #Slider-template--27815670284605__slideshow_mobile_FGkMn8 .media::before {
+        padding-bottom: 100.0%;
+        content: '';
+        display: block;
+      }
+    }
+#Slide-template--27815670284605__slideshow_mobile_FGkMn8-1 .banner__media::after {
+  opacity: 0.0;
+}
+#Slide-template--27815670284605__slideshow_mobile_FGkMn8-2 .banner__media::after {
+  opacity: 0.0;
+}
+#Slide-template--27815670284605__slideshow_mobile_FGkMn8-3 .banner__media::after {
+  opacity: 0.0;
+}
+#Slide-template--27815670284605__slideshow_mobile_FGkMn8-4 .banner__media::after {
+  opacity: 0.0;
+}
+#Slide-template--27815670284605__slideshow_mobile_FGkMn8-5 .banner__media::after {
+  opacity: 0.0;
+}
+@media screen and (max-width: 749px) {
+      #Slider-template--27815670284605__slideshow_desktop_kqrCQ4::before,
+      #Slider-template--27815670284605__slideshow_desktop_kqrCQ4 .media::before,
+      #Slider-template--27815670284605__slideshow_desktop_kqrCQ4:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: 37.5%;
+        content: '';
+        display: block;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #Slider-template--27815670284605__slideshow_desktop_kqrCQ4::before,
+      #Slider-template--27815670284605__slideshow_desktop_kqrCQ4 .media::before {
+        padding-bottom: 37.5%;
+        content: '';
+        display: block;
+      }
+    }
+#Slide-template--27815670284605__slideshow_desktop_kqrCQ4-1 .banner__media::after {
+  opacity: 0.0;
+}
+#shopify-section-template--27815670284605__slideshow_desktop_kqrCQ4 .banner__media {transition: transform var(--duration-long) ease;} #shopify-section-template--27815670284605__slideshow_desktop_kqrCQ4 .slideshow__slide:hover .banner__media {transform: scale(1.03);}
+@media screen and (max-width: 749px) {
+      #Slider-template--27815670284605__slideshow_mobile_dHJA6W::before,
+      #Slider-template--27815670284605__slideshow_mobile_dHJA6W .media::before,
+      #Slider-template--27815670284605__slideshow_mobile_dHJA6W:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: 100.0%;
+        content: '';
+        display: block;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #Slider-template--27815670284605__slideshow_mobile_dHJA6W::before,
+      #Slider-template--27815670284605__slideshow_mobile_dHJA6W .media::before {
+        padding-bottom: 100.0%;
+        content: '';
+        display: block;
+      }
+    }
+#Slide-template--27815670284605__slideshow_mobile_dHJA6W-1 .banner__media::after {
+  opacity: 0.0;
+}

@@ -1,0 +1,26 @@
+- **WordPress** — CMS behind the page (custom `apc-2026` theme, block-library/global-styles CSS, oEmbed, RSS feeds)
+- **Bootstrap 5** — grid, spacing, flex/order utilities and reboot for every section; bundle JS also loaded
+- **Bootstrap Icons** — Instagram, Facebook, YouTube and TikTok glyphs in the header
+- **jQuery 3.7.1** — runtime for the theme script (header on scroll, smooth anchor scroll, merch title equal heights, lyrics overlays)
+- **jQuery Migrate** — compatibility shim loaded alongside jQuery
+- **Google Fonts (Muli)** — body, merch titles, tour widget and lyrics typeface in weights 200/300/400/800
+- **Fezeline** — self-hosted display face for headings, nav, buttons and the hero title (falls back to serif in the saved copy)
+- **CSS container queries** — hero title scales with `cqi` units against `#home-hero-image-text`
+- **HTML5 video** — autoplaying, muted, looping hero background
+- **YouTube embed** — iframe player in the Media section
+- **Bandsintown widget** — renders the Tour Dates list with RSVP and ticket buttons
+- **Mailchimp embedded form** — mailing-list signup with classic embed CSS, `mc-validate.js` (bundles jQuery 1.9) and `mc-sms-phone.js`
+- **Shopify** — Latest Merch grid items link to store.aperfectcircle.com product pages
+- **Contact Form 7** — WordPress form plugin CSS/JS plus schema validation script, loaded but unused on this page
+- **Audio Player with Playlist Ultimate** — WordPress audio plugin with jPlayer Blue Monday skin, loaded but no player on this page
+- **Font Awesome 4.7** — icon font loaded by the audio player plugin, unused on this page
+- **Page scroll to id** — WordPress smooth-scroll plugin configured for anchor links
+- **WordPress hooks & i18n** — `wp-hooks`/`wp-i18n` scripts required by Contact Form 7
+- **WordPress emoji** — emoji support detection and Twemoji fallback loader
+- **Speculation Rules API** — conservative same-site link prefetching
+- **Schema.org JSON-LD** — `MusicEvent` structured data for every tour date
+- **Open Graph / Twitter Cards** — social sharing metadata
+- **Google Analytics** — Universal Analytics pageview tracking
+- **Google Tag Manager** — tag container
+- **Meta (Facebook) Pixel** — PageView tracking
+- **MediaMath** — third-party tag script (`pixel.mathtag.com`)

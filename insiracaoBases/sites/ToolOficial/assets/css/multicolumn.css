@@ -1,0 +1,12 @@
+/* Album multicolumn: section padding, full-bleed page width */
+.section-template--27815670284605__multicolumn_BXMjgt-padding {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-template--27815670284605__multicolumn_BXMjgt-padding {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+#shopify-section-template--27815670284605__multicolumn_BXMjgt .page-width {max-width: 100%; padding-left: 0; padding-right: 0;}

@@ -1,0 +1,777 @@
+/* SUBSCRIBE footer: two-step mailing-list form, custom consent checkboxes, snake decorations, copyright line */
+br.mob {
+    display: none;
+}
+span.sep.desk {
+    display: none;
+}
+.mlistwrapper .plain-ml-wrapper .fieldWrap select {
+    cursor: pointer;
+}
+.mlistwrapper .plain-ml-wrapper .mlistFormTwo div.submit:hover {
+    opacity: .5;
+}
+.welcome {
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+.mlistwrapper .plain-ml-wrapper>div label.error,
+.mlistwrapper .plain-ml-wrapper div#errorLabelContainer2 {
+    color: #ed3d3d;
+    font-size: 14px;
+    font-family: "times-new-roman", sans-serif;
+    text-transform: none;
+}
+.mlistwrapper .plain-ml-wrapper div#errorLabelContainer2 {
+    text-align: center;
+}
+div#block-acq-starterm-copy-2-block-1031 .mlistwrapper .plain-ml-wrapper .terms .terms-message {
+    position: absolute;
+    background: #332A1D;
+}
+div#block-acq-starterm-copy-2-block-1031 .mlistwrapper .plain-ml-wrapper .secondform .terms .terms-message {
+    position: relative;
+}
+.newTitle {
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.0833vw;
+    color: #C9D1D2;
+    line-height: 0.20833vw;
+    /* letter-spacing: -1px !important; */
+    text-transform: capitalize;
+    padding-bottom: 3.5417vw;
+    text-align: center;
+}
+div#block-acq-starterm-copy-2-block-1031 h2 {
+    display: none !important;
+}
+div#block-acq-starterm-copy-2-block-1031 .mlistwrapper .plain-ml-wrapper .mlistFormTwo input.submit {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.consent-placeholder {
+    position: relative;
+    margin: 20px auto 0;
+    display: block;
+}
+.plain-ml-wrapper .consent-placeholder input[type="checkbox"]:not(:checked),
+.plain-ml-wrapper .consent-placeholder input[type="checkbox"]:checked {
+    position: absolute;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+    top: 0px;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+    -webkit-appearance: none;
+    padding: 0;
+    opacity: 0;
+    background: transparent;
+    border: none;
+}
+.plain-ml-wrapper .consent-placeholder input[type="checkbox"]:not(:checked)+label:before,
+.plain-ml-wrapper .consent-placeholder input[type="checkbox"]:checked+label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #75929E;
+    background: transparent;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+.plain-ml-wrapper .consent-placeholder input[type="checkbox"].errored:not(:checked)+label:before {
+    border-color: red !important;
+}
+.plain-ml-wrapper .consent-placeholder input[type="checkbox"]+label {
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 1;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 14px;
+    padding-left: 35px;
+    vertical-align: top;
+    font-weight: 400;
+    padding-top: 0;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    color: #fff;
+    pointer-events: initial;
+}
+.plain-ml-wrapper .consent-placeholder input[type="checkbox"]:checked+label:after {
+    content: "\2713";
+    position: absolute;
+    top: 6px;
+    line-height: 1;
+    left: 8px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    transform: none;
+}
+.plain-ml-wrapper .consent-placeholder input[type="checkbox"]:checked+label:after {
+    color: #fff;
+}
+.consent-placeholder span.input-error {
+    color: red;
+    position: absolute;
+    top: -1.2vw;
+    left: 0;
+    bottom: auto;
+}
+.secondform .consent-placeholder {
+    margin: 10px auto;
+}
+.consent-placeholder a {
+    text-decoration: underline;
+}
+.consent-placeholder a:hover {
+    text-decoration: none;
+    border: none;
+}
+.plain-ml-wrapper label.tiny {
+    font-size: 0;
+    height: 0;
+}
+.plain-ml-wrapper .consent-placeholder input[type="checkbox"]+label a {
+    color: #fff;
+}
+.fadeOut {
+    display: none !important;
+}
+.fadeIn {
+    display: block !important;
+}
+span.input-error {
+    color: red;
+    position: absolute;
+    top: -1vw;
+    left: 0;
+    bottom: auto;
+    text-transform: uppercase;
+    font-size: .7vw;
+    font-weight: 400;
+}
+input:autofill {
+    -webkit-box-shadow: 0 0 0 1000px #000 inset;
+    -webkit-text-fill-color: #ffffff;
+}
+.site-footer__bottom .content {
+    padding: 0;
+}
+.site-footer__bottom .block {
+    margin: 0;
+}
+.site-footer__bottom {
+    margin: 0;
+    border: none;
+}
+div#block-acq-starterm-copy-2-block-1031 .mlistwrapper .plain-ml-wrapper .fieldWrap select,
+div#block-acq-starterm-copy-2-block-1031 .mlistwrapper .plain-ml-wrapper .fieldWrap input {
+    padding-left: 0.5vw;
+}
+/* =====================================================
+Reskin: SUBSCRIBE footer with snake decorations
+===================================================== */
+.mlistwrapper.reskin-mlist {
+    position: relative;
+    background: #000;
+    padding: 4vw 0 2vw;
+    overflow: hidden;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 3.4896vw;
+    line-height: normal;
+    width: 100%;
+    margin: 0vw;
+    padding-top: 9.8333vw;
+}
+.mlistwrapper.reskin-mlist .snake-deco.snake-left {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    /* height: auto; */
+    width: 17.4479vw;
+    /* max-width: 17.4479vw;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: bottom; */
+    pointer-events: none;
+    z-index: 0;
+}
+.mlistwrapper.reskin-mlist .snake-deco.snake-right {
+    position: absolute;
+    bottom: -2vw;
+    top: auto;
+    /* height: auto; */
+    width: 18.4375vw;
+    /* max-width: 18.4375vw; */
+    /* max-height: 100%; */
+    /* object-fit: contain; */
+    /* object-position: bottom; */
+    pointer-events: none;
+    z-index: 0;
+}
+.mlistwrapper.reskin-mlist .snake-left {
+    left: 18.1250vw;
+}
+.mlistwrapper.reskin-mlist .snake-right {
+    right: 18.2813vw;
+}
+.mlistwrapper.reskin-mlist .plain-ml-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 23.33vw;
+    margin: 0 auto;
+    text-align: center;
+    background: transparent;
+}
+.mlistwrapper.reskin-mlist .mlist-header {
+    text-align: center;
+}
+.newTitle {
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.08vw;
+    color: #fff;
+    letter-spacing: 0.15vw;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding-bottom: 2.8125vw;
+}
+.mlistwrapper.reskin-mlist .mlist-subtitle {
+    display: none;
+}
+.mlistwrapper.reskin-mlist form.mlistFormOne {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+}
+/* Hidden inputs container should never claim flex space */
+.mlistwrapper.reskin-mlist form.mlistFormOne .primary-list-values {
+    display: none;
+    flex: 0 0 0;
+    width: 0;
+}
+/* Consent placeholder must occupy its own row, not sit beside email/submit */
+.mlistwrapper.reskin-mlist form.mlistFormOne>.consent-placeholder {
+    flex: 1 0 100%;
+    width: 100%;
+    max-width: 100%;
+}
+.mlistwrapper.reskin-mlist .email.fieldWrap {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+}
+.mlistwrapper.reskin-mlist .email.fieldWrap input.email {
+    width: 100%;
+    box-sizing: border-box;
+    height: 2.34vw;
+    padding: 0vw;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #75929E;
+    color: #fff;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.83vw;
+    letter-spacing: 0.08vw;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: none;
+    margin: 0vw;
+}
+.mlistwrapper.reskin-mlist .email.fieldWrap input.email::placeholder {
+    color: #fff;
+    opacity: 1;
+    font-size: 0.83vw;
+    letter-spacing: 0.08vw;
+    text-transform: uppercase;
+}
+.mlistwrapper.reskin-mlist .submit {
+    flex: 0 0 auto;
+    margin: 0 0 0 0.5vw;
+}
+.mlistwrapper.reskin-mlist input.submit.mlistSubmit {
+    width: 6.20vw;
+    height: 2.34vw;
+    padding: 0;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #75929E;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.83vw;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    transition: opacity .2s ease;
+}
+.mlistwrapper.reskin-mlist input.submit.mlistSubmit:hover {
+    opacity: 0.7;
+}
+.mlistwrapper.reskin-mlist .consent-placeholder {
+    margin: 2.5vh auto 0;
+    text-align: left;
+    max-width: 100%;
+    position: relative;
+}
+.mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]:not(:checked),
+.mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]:checked {
+    width: 1.0417vw;
+    height: 1.0417vw;
+}
+.mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]:not(:checked)+label:before,
+.mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]:checked+label:before {
+    width: 1.0417vw;
+    height: 1.0417vw;
+    border: 1px solid #75929E;
+    top: 0.05vw;
+}
+.mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]:checked+label:after {
+    top: 0.1vw;
+    left: 0.18vw;
+    font-size: 0.9vw;
+}
+.mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]+label {
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.57vw;
+    line-height: 1.6;
+    letter-spacing: 0.04vw;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 1.5vw;
+    cursor: unset;
+}
+.mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]+label a {
+    color: #fff;
+    text-decoration: underline;
+}
+/* ---------- Second form (after first submit) ---------- */
+.mlistwrapper.reskin-mlist .secondform.singleform {
+    position: relative;
+    z-index: 1;
+    max-width: 32vw;
+    margin: 0 auto;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+}
+/* Empty .name wrapper in our markup — avoid creating extra vertical space */
+.mlistwrapper.reskin-mlist .secondform>form.mlistFormTwo>.name:empty {
+    display: none;
+}
+/* Optional close button used by some templates */
+.mlistwrapper.reskin-mlist .secondform .secondFormClose {
+    position: absolute;
+    top: -1vw;
+    right: 0vw;
+    font-family: "times-new-roman", "Times New Roman", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2vw;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 2;
+}
+.mlistwrapper.reskin-mlist .secondform .secondFormClose:hover {
+    opacity: 0.6;
+}
+/* Error label inside the second form should match the reskin typography */
+.mlistwrapper.reskin-mlist .plain-ml-wrapper>div label.error,
+.mlistwrapper.reskin-mlist .plain-ml-wrapper div#errorLabelContainer2 {
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7vw;
+    letter-spacing: 0.04vw;
+    text-transform: uppercase;
+    color: #ed3d3d;
+}
+.mlistwrapper.reskin-mlist .secondform .welcome {
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    margin-bottom: 1.5vw;
+}
+.mlistwrapper.reskin-mlist .secondform .welcome p {
+    font-size: 1.2vw;
+    line-height: 1.3;
+    margin: 0 0 0.6vw;
+    text-transform: uppercase;
+    letter-spacing: 0.08vw;
+}
+.mlistwrapper.reskin-mlist .secondform .thankswelcome-msg {
+    font-size: 0.83vw;
+    line-height: 1.4;
+    letter-spacing: 0.04vw;
+    text-transform: uppercase
+}
+.mlistwrapper.reskin-mlist .secondform.plain-ml-wrapper,
+.mlistwrapper.reskin-mlist form.mlistFormTwo.plain-ml-wrapper {
+    background: transparent;
+}
+.mlistwrapper.reskin-mlist .secondform .fieldWrap {
+    position: relative;
+    margin: 0 0 1vw;
+    text-align: left;
+}
+.mlistwrapper.reskin-mlist .secondform .fieldWrap label {
+    display: block;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.57vw;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.08vw;
+    margin-bottom: 0.3vw;
+}
+.mlistwrapper.reskin-mlist .secondform .fieldWrap input[type="text"],
+.mlistwrapper.reskin-mlist .secondform .fieldWrap select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 2.34vw;
+    padding: 0vw;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #75929E;
+    color: #fff;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.83vw;
+    letter-spacing: 0.08vw;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.mlistwrapper.reskin-mlist .secondform .fieldWrap select {
+    padding-right: 1.5vw
+}
+.mlistwrapper.reskin-mlist .secondform .fieldWrap select option {
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+}
+.mlistwrapper.reskin-mlist .secondform .select-drop-down-arrow {
+    position: relative;
+}
+.mlistwrapper.reskin-mlist .secondform .select-drop-down-arrow::after {
+    content: "";
+    position: absolute;
+    right: 0.6vw;
+    top: 50%;
+    width: 0.5vw;
+    height: 0.5vw;
+    border-right: 1px solid #75929E;
+    border-bottom: 1px solid #75929E;
+    transform: translateY(-75%) rotate(45deg);
+    pointer-events: none;
+}
+.mlistwrapper.reskin-mlist .secondform .birthday>.birthday {
+    display: flex;
+    gap: 0.6vw;
+}
+.mlistwrapper.reskin-mlist .secondform .birthday>.birthday>.fieldWrap {
+    flex: 1 1 0;
+    margin: 0;
+}
+.mlistwrapper.reskin-mlist .secondform label.birthday {
+    display: block;
+    text-transform: uppercase;
+}
+.mlistwrapper.reskin-mlist .secondform .submit {
+    margin: 1.5vw auto 0;
+    text-align: center;
+}
+.mlistwrapper.reskin-mlist .secondform input.submit.mlistSubmit {
+    width: 6.20vw;
+    height: 2.34vw;
+    padding: 0;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #75929E;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.83vw;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    transition: opacity .2s ease;
+    margin: 0vw;
+}
+.mlistwrapper.reskin-mlist .secondform input.submit.mlistSubmit:hover {
+    opacity: 0.7;
+}
+.mlistwrapper.reskin-mlist .thankyou.fadeIn {
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 2.08vw;
+    text-align: center;
+    letter-spacing: 0.15vw;
+    text-transform: uppercase;
+    padding: 2vw 0;
+    min-height: 35vh;
+    padding: 0vw;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* ---------- Inline copyright footer ---------- */
+.mlistwrapper.reskin-mlist .reskin-footer {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 3vw auto 0;
+    padding: 0 4vw;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+.mlistwrapper.reskin-mlist .reskin-footer p {
+    margin: 0vw;
+    font-size: 0.57vw;
+    line-height: normal;
+    letter-spacing: 0.06vw;
+    text-transform: uppercase;
+}
+.mlistwrapper.reskin-mlist .reskin-footer a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.mlistwrapper.reskin-mlist .reskin-footer a:hover {
+    opacity: 0.6;
+}
+/* Copyright footer text size hook (applies if footer block sits below) */
+.footer-outerwrapper .copyright,
+.footer-outerwrapper .copyright>div,
+.footer-outerwrapper .copyright-text,
+.footer-outerwrapper .copyright-links,
+.footer-outerwrapper .copyright-links p,
+.footer-outerwrapper .copyright-links a,
+.footer-outerwrapper a.ot-sdk-show-settings {
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.57vw;
+    letter-spacing: 0.04vw;
+}
+.site-footer__bottom .region {
+    margin: 0vw;
+}
+.site-footer .layout-container {
+    padding: 0vw;
+    max-width:100%;
+}
+span.sep.mob {
+    padding: 0vw !important;
+}
+.mlistwrapper.reskin-mlist .email.fieldWrap input.email.errored {
+    border-color: red;
+}
+@media only screen and (max-width:1024px) and (orientation:portrait) {
+    br.mob {
+        display: block;
+    }
+    br.desk {
+        display: none;
+    }
+    span.sep.mob {
+        display: none !important;
+    }
+    span.sep.desk {
+        display: inline-block;
+    }
+    .mlistwrapper.reskin-mlist {
+        padding-top: 14.0507vw;
+        padding-bottom: 0vw;
+    }
+    .plain-ml-wrapper.dtmlightbox.firstMlistForm.in-grid {
+        max-width: 89.8667vw;
+    }
+    .newTitle {
+        font-size: 9.0667vw;
+        letter-spacing: 0.90667vw;
+        line-height: normal;
+        padding-bottom: 5.8667vw;
+    }
+    .mlistwrapper.reskin-mlist input.submit.mlistSubmit {
+        width: 23.4667vw;
+        height: 8.0000vw;
+        line-height: 8.0000vw;
+        font-size: 3.2000vw;
+        letter-spacing: 0.32000vw;
+        margin-left: 2.5333vw;
+    }
+    .mlistwrapper.reskin-mlist .email.fieldWrap input.email {
+        height: 8.0000vw;
+        line-height: 8.0000vw;
+        font-size: 4.2667vw;
+        letter-spacing: 0.32000vw;
+    }
+    .mlistwrapper.reskin-mlist .email.fieldWrap input.email::placeholder {
+        font-size: 4.2667vw;
+        letter-spacing: 0.32000vw;
+    }
+    .mlistwrapper.reskin-mlist .consent-placeholder {
+        margin-top: 2.5vh;
+    }
+    .mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]:not(:checked),
+    .mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]:checked {
+        width: 5.3333vw;
+        height: 5.3333vw;
+    }
+    .mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]:not(:checked)+label:before,
+    .mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]:checked+label:before {
+        width: 5.3333vw;
+        height: 5.3333vw;
+    }
+    label {}
+    .mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]+label {
+        padding-left: 8vw;
+        font-size: 2.4000vw;
+        letter-spacing: 0.24000vw;
+        line-height: 3.4667vw;
+    }
+    span.input-error {
+        top: -3vw;
+        font-size: 2.5vw;
+    }
+    .email.fieldWrap {
+        position: relative;
+    }
+    .consent-placeholder span.input-error {
+        top: -4vw;
+    }
+    .mlistwrapper.reskin-mlist .consent-placeholder input[type="checkbox"]:checked+label:after {
+        font-size: 4vw;
+        left: 1vw;
+        top: 1vw;
+    }
+    .snake_images {
+        position: relative;
+        min-height: 69.3333vw;
+        margin-top: 16.5333vw;
+    }
+    .mlistwrapper.reskin-mlist .snake-deco.snake-left {
+        width: 43.4667vw;
+        left: 8.8000vw;
+    }
+    .mlistwrapper.reskin-mlist .snake-deco.snake-right {
+        width: 46.4000vw;
+        right: 8.8000vw;
+    }
+    .mlistwrapper.reskin-mlist .reskin-footer {
+        margin-top: 14.4000vw;
+    }
+    .mlistwrapper.reskin-mlist .reskin-footer p {
+        font-size: 2.4000vw;
+        letter-spacing: 0.24vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform.singleform {
+        max-width: 100%;
+    }
+    .mlistwrapper.reskin-mlist .secondform.plain-ml-wrapper,
+    .mlistwrapper.reskin-mlist form.mlistFormTwo.plain-ml-wrapper {
+        max-width: 100%;
+    }
+    .mlistwrapper.reskin-mlist .secondform .welcome p {
+        font-size: 3vw;
+        line-height: normal;
+        margin-bottom: 3vw;
+        letter-spacing: 0.3vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform .thankswelcome-msg {
+        font-size: 2.5vw;
+        line-height: normal;
+        letter-spacing: 0.25vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform .secondFormClose {
+        font-size: 4vw;
+        top: -5vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform .fieldWrap {
+        margin-bottom: 3vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform .fieldWrap label {
+        font-size: 3.5vw;
+        letter-spacing: 0.35vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform .fieldWrap input[type="text"],
+    .mlistwrapper.reskin-mlist .secondform .fieldWrap select {
+        height: 8vw;
+        line-height: 8vw;
+        font-size: 4.2667vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform .select-drop-down-arrow::after {
+        width: 3vw;
+        height: 3vw;
+        right: 2vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform .birthday>.birthday {
+        gap: 4vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform .fieldWrap select {
+        padding-right: 7vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform input.submit.mlistSubmit {
+        width: 23.4667vw;
+        height: 8.0000vw;
+        line-height: 8.0000vw;
+        font-size: 3.2000vw;
+        letter-spacing: 0.32000vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform .submit {
+        margin-top: 4vw;
+    }
+    .mlistwrapper.reskin-mlist .secondform .welcome {
+        margin-bottom: 5vw;
+    }
+    .mlistwrapper.reskin-mlist .thankyou.fadeIn {
+        font-size: 7vw;
+        min-height: 25vw;
+    }
+}

@@ -1,0 +1,65 @@
+/* Global reskin: black body, times-new-roman type, white links with .6 hover fade, full-width images, hides Drupal chrome */
+nav#block-acq-starterm-copy-2-menu-menu-home-one-page-linked {
+    display: none;
+}
+nav#toolbar-bar {
+    display: none;
+}
+body {
+    padding: 0 !important;
+    color: #ffffff;
+    background: #000000;
+    font-family: "times-new-roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+div#block-bartik-local-tasks {
+    display: none;
+}
+div#block-bartik-page-title {
+    display: none;
+}
+div#main {
+    margin: 0vw;
+}
+#page,
+#main-wrapper,
+.region-primary-menu .menu-item a.is-active,
+.region-primary-menu .menu-item--active-trail a {
+    background: transparent;
+}
+a,
+a:hover,
+a:active,
+a:focus,
+a:focus-visible,
+a:focus-within {
+    border: none;
+    color:#ffffff
+}
+a:hover {
+    opacity: .6;
+}
+footer.site-footer {
+    background: transparent;
+    padding: 0vw;
+}
+.clearfix.region.region-header {
+    display: none;
+}
+.main-content .section {
+    padding: 0vw;
+}
+div#block-acq-starterm-copy-2-block-956 {
+    display: none;
+}
+.block .content {
+    margin: 0vw;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+div#main-wrapper {
+    max-width: 100%;
+}

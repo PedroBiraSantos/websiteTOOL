@@ -1,0 +1,81 @@
+/* Overlay navigation: logo, uppercase menu items and social icon row; stacked layout on portrait */
+div#block-bartik-reskinnavdom {
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 99;
+}
+.nav_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2.2917vw;
+    margin-right: 2.2917vw;
+    margin-top: 1.7708vw;
+    align-items: center;
+}
+.site_logo {
+    width: 5.6771vw;
+    margin-right: 3vw;
+}
+.site_logo h1 {
+    margin: 0vw;
+}
+.nav_menu_items {
+    display: flex;
+    gap: 5.2083vw;
+    flex-direction: row;
+}
+.nav_menu_item a {
+    font-size: 1.2500vw;
+    letter-spacing: 0.1250vw;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+ul.footer-social {
+    padding: 0vw;
+    margin: 0vw;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1.5625vw;
+}
+ul.footer-social li a {
+    font-size: 1.1vw;
+}
+@media only screen and (max-width:1024px) and (orientation:portrait) {
+    .nav_section {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 4.0000vw;
+        gap: 5.4667vw;
+    }
+    .site_logo {
+        width: 21.6000vw;
+        margin: 0;
+    }
+    .nav_menu_items {
+        gap: 5.3333vw;
+    }
+    .nav_menu_item a {
+        font-size: 3.2000vw;
+        letter-spacing: 0.3200vw;
+    }
+    .nav_socials {
+        position: absolute;
+        top: 90.5vh;
+    }
+    ul.footer-social {
+        gap: 4.2667vw;
+    }
+    ul.footer-social li a {
+        font-size: 4vw;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:portrait) {
+    .nav_section {
+        gap: 1.47vw;
+    }
+}

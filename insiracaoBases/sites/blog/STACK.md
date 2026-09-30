@@ -1,0 +1,20 @@
+- **WordPress 7.1.2** — CMS powering the blog: posts, categories, monthly archives, RSS feeds, search and the sidebar widgets
+- **iso4 theme (Starkers / Twenty Ten based)** — Nathan Staines' HTML5 theme: 842px three-column layout, textured brown background, gold Verdana type, image-replaced logo, nav and headings
+- **html5doctor Reset v1.4.1** — CSS reset imported by the theme's style.css
+- **html5shiv** — IE<9 conditional-comment script so old IE can style HTML5 elements
+- **WP-Cufon 1.6.10 + Cufón 1.09i** — renders post titles (h2 a) and the logo link as canvas text
+- **Trade Gothic LT Std Bold (Cufón font)** — domain-locked title typeface; outside blog.iso50.com the titles fall back to bold Verdana
+- **WP-PageNavi** — numbered pagination bar under the post list
+- **jQuery 1.7.2** — runtime for the slideshow and jPlayer plugins
+- **Basic jQuery Slider (bjqs)** — 450×170 masthead slideshow, initialised by the theme's iso50.js
+- **jPlayer + jPlayer Playlist** — audio player plugin and its skin CSS, loaded but with no player on this page
+- **WP FancyZoom (FancyZoom 1.1 + addDOMLoadEvent)** — inline image zoom for links to images; this page has none
+- **Jetpack** — Open Graph meta tags
+- **WordPress emoji** — emoji support detection and Twemoji fallback loader
+- **Speculation Rules API** — conservative same-site link prefetching
+- **Facebook JavaScript SDK** — renders the sidebar Like button (`fb:like`)
+- **YouTube embeds** — video players inside posts
+- **Bandcamp embedded players** — album/track players inside posts
+- **SoundCloud widget** — track player in the "Jetty" post
+- **XFN** — `rel` relationship microformat on the blogroll links (profile gmpg.org/xfn/11)
+- **Google Search Console** — site-verification meta tag

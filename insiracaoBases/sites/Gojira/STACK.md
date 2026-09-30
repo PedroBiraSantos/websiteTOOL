@@ -1,0 +1,21 @@
+- **Drupal 10** — CMS behind the page (Bartik-based theme, custom block content holding each section's HTML/CSS/JS, Views for the video and music lists)
+- **Drupal core JS** — `once`, `loadjs`, AJAX, Views AJAX pager and live-announce behaviours loaded at the end of the page
+- **Normalize.css 8.0.1** — CSS reset bundled into Drupal's aggregated stylesheet
+- **jQuery 3.4.1** — runtime for Owl Carousel and the inline carousel/nav scripts
+- **Owl Carousel 2.2.1** — looping one-item sliders for the Video and Music sections
+- **malihu jQuery Custom Scrollbar** — custom scrollbar plugin loaded site-wide; only targets album descriptions on other pages
+- **Font Awesome 6.7.2** — Instagram, TikTok, Facebook, X and YouTube icons in the nav
+- **Adobe Fonts (Typekit)** — serves the `times-new-roman` face used for all text (a second kit also ships Eurostile)
+- **CSS viewport units + orientation media queries** — every size is in `vw`/`vh`, with a separate portrait layout at ≤1024px
+- **YouTube IFrame Player API** — click-to-play players inside the video carousel (`youtube-nocookie.com` host)
+- **Bandsintown widget** — Tour section widget, currently showing "No Upcoming Tour Dates" with a Request a Show button
+- **WMG CDC mailing-list library (`cdc.js`)** — two-step signup form, legal consent templates, country list, validation and submission
+- **WMG mlist DTM (`dtm.js`)** — mailing-list analytics events for signup intent/success
+- **WMG mailinglistgeo** — geo-IP lookup (JSONP) used to preselect the visitor's country
+- **WMG YTFns (`YTFns.js`)** — shared YouTube helper functions (ID parsing, player/playlist builders)
+- **OneTrust** — cookie-consent SDK, banner styles and the "Do Not Sell or Share" preferences link
+- **Adobe Experience Platform Launch** — tag manager (`_satellite`) that injects the site's marketing rules at runtime
+- **Adobe Analytics (AppMeasurement + ActivityMap)** — page and link tracking fed by the `digitalData` layer
+- **Launch-injected vendor tags** — rule code for Meta Pixel, Google Analytics, Google Ads, DoubleClick, TikTok, Snap, Pinterest, Reddit, X/Twitter, LinkedIn, Hotjar, comScore, Quantcast, Parse.ly, The Trade Desk, MediaMath, SpringServe, Verizon Media, Audigent and WebFX
+- **Open Graph / Twitter Cards** — social sharing metadata
+- **Schema.org JSON-LD** — structured-data block (empty on this page)

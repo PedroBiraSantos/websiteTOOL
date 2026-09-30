@@ -1,0 +1,99 @@
+jQuery(document).ready(function(){
+    checkInViewport();
+});
+window.addEventListener('scroll', function() {
+    checkInViewport();
+});
+jQuery(window).bind("load", function() {
+    checkInViewport();
+});
+/**********************Page Fade effect scripts****************************/
+var docElem = window.document.documentElement;
+var isAndroid = /(android)/i.test(navigator.userAgent);
+
+function getViewportH() {
+    var client = docElem['clientHeight'],
+        inner = window['innerHeight'];
+    if (client < inner)
+        return inner;
+    else
+        return client;
+}
+
+function scrollY() {
+    return window.pageYOffset || docElem.scrollTop;
+}
+
+function extend(a, b) {
+    for (var key in b) {
+        if (b.hasOwnProperty(key)) {
+            a[key] = b[key];
+        }
+    }
+    return a;
+}
+
+// http://stackoverflow.com/a/5598797/989439
+function getOffset(el) {
+    var offsetTop = 0,
+        offsetLeft = 0;
+    do {
+        if (!isNaN(el.offsetTop)) {
+            offsetTop += el.offsetTop;
+        }
+        if (!isNaN(el.offsetLeft)) {
+            offsetLeft += el.offsetLeft;
+        }
+    } while (el = el.offsetParent)
+
+    return {
+        top: offsetTop,
+        left: offsetLeft
+    };
+};
+
+function inViewport(el, h) {
+    var elH = el.offsetHeight,
+        scrolled = scrollY(),
+        viewed = scrolled + getViewportH(),
+        elTop = getOffset(el).top,
+        elBottom = elTop + elH,
+        // if 0, the element is considered in the viewport as soon as it enters.
+        // if 1, the element is considered in the viewport only when it's fully inside
+        // value in percentage (1 >= h >= 0)
+        h = h || 0;
+
+    return (elTop + elH * h) <= viewed && (elBottom - elH * h) >= scrolled;
+}
+
+function checkInViewport() {
+
+    jQuery(".views-row,.merch").each(function() {
+        if (inViewport(this, 0.2)) {
+            if (!jQuery(this).hasClass("animate")) {
+                jQuery(this).addClass("animate");
+                if (isAndroid) {
+                    jQuery(this).removeClass("animate").addClass("animated");
+                    jQuery(this).css("opacity", "1");
+                };
+
+            }
+        }
+    });
+
+    jQuery(".block-block,.block-views,.region-primary-menu,.col-second, .block-block-content").each(function() {
+        if (inViewport(this, 0)) {
+            if (!jQuery(this).hasClass("animate")) {
+                jQuery(this).addClass("animate");
+                if (isAndroid) {
+                    jQuery(this).removeClass("animate").addClass("animated");
+                    jQuery(this).css("opacity", "1");
+                }
+            }
+        }
+    });
+}
+
+
+/**********************Page Fade Effect Scripts End****************************/
+

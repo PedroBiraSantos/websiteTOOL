@@ -1,0 +1,9 @@
+/* Mailchimp embedded signup form: inline-error colours, container font/width, GDPR checkbox layout */
+/* must load after classic-061523.css so these win the cascade exactly as in the original */
+#mc_embed_signup input.mce_inline_error{border-color:#6B0505}
+#mc_embed_signup div.mce_inline_error{margin:0 0 1em 0;padding:5px 10px;background-color:#6B0505;font-weight:bold;z-index:1;color:#fff}
+#mc_embed_signup{background:#fff;clear:left;font:14px Helvetica,Arial,sans-serif;width:600px}
+#mc-embedded-subscribe-form input[type=checkbox]{display:inline;width:auto;margin-right:10px}
+#mergeRow-gdpr{margin-top:20px}
+#mergeRow-gdpr fieldset label{font-weight:normal}
+#mc-embedded-subscribe-form .mc_fieldset{border:none;min-height:0;padding-bottom:0}

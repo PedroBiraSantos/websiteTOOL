@@ -1,0 +1,62 @@
+(function (window) {
+  function getBrowserLanguageCode() {
+    var nav = window && window.navigator;
+    var lang = nav && nav.language;
+    if (!lang) {
+      return "en";
+    }
+    return String(lang).split("-")[0].toLowerCase();
+  }
+
+  function getSmsProgramForCountryAndLanguage(
+    smsProgramData,
+    countryCode,
+    languageCode,
+  ) {
+    if (!smsProgramData || smsProgramData.length === 0 || !countryCode) {
+      return null;
+    }
+
+    var entriesForCountry = [];
+    for (var i = 0; i < smsProgramData.length; i++) {
+      var entry = smsProgramData[i];
+      if (entry && entry.countryCode === countryCode) {
+        entriesForCountry.push(entry);
+      }
+    }
+
+    if (entriesForCountry.length === 0) {
+      return null;
+    }
+    if (entriesForCountry.length === 1) {
+      return entriesForCountry[0];
+    }
+
+    var langLower = (languageCode || "").toLowerCase();
+
+    var exactMatch = null;
+    var englishFallback = null;
+    for (var j = 0; j < entriesForCountry.length; j++) {
+      var candidate = entriesForCountry[j];
+      var candidateLang =
+        candidate && candidate.language
+          ? String(candidate.language).toLowerCase()
+          : "";
+      if (!exactMatch && candidateLang === langLower) {
+        exactMatch = candidate;
+      }
+      if (!englishFallback && candidateLang === "en") {
+        englishFallback = candidate;
+      }
+    }
+
+    if (exactMatch) {
+      return exactMatch;
+    }
+    return englishFallback || entriesForCountry[0];
+  }
+
+  window.getBrowserLanguageCode = getBrowserLanguageCode;
+  window.getSmsProgramForCountryAndLanguage =
+    getSmsProgramForCountryAndLanguage;
+})(window);

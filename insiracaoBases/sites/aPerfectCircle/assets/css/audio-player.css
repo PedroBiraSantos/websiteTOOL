@@ -1,0 +1,9 @@
+/* Audio Player with Playlist Ultimate (jPlayer) colour overrides — no player is rendered on the page */
+.apwp-audio-player-wrp .controller-common, .apwp-audio-player-wrp .jp-play-bar, .apwp-audio-player-wrp .jp-volume-bar-value, .apwp-audio-player-wrp div.jp-type-playlist div.jp-playlist li.jp-playlist-current::before{background-color:#203360;}.apwp-audio-player-wrp div.jp-type-playlist div.jp-playlist a.jp-playlist-current, .apwp-audio-player-wrp div.jp-type-playlist div.jp-playlist a:hover, .apwp-audio-player-wrp .jp-state-looped .jp-repeat::before, .apwp-audio-player-wrp .playlist-btn.active::before, .apwp-audio-player-wrp .jp-state-shuffled .jp-shuffle::before{color:#203360;}.apwp-audio-player-wrp .playlist-block, .apwp-audio-player-wrp .playlist-block-style-two, .apwp-audio-player-wrp .jp-playlist.playlist-block{background:#0a0a0a;}div.jp-type-playlist div.jp-playlist a{color:#ffffff;}.apwp-audio-player-wrp .album-art-block .jp-title{color:#ffffff;background-color:#000000,0.33);font-size:20px;}.apwp-audio-player-wrp .jp-playlist-item h4{font-size:12px;}.jp-video .jp-progress .jp-play-bar:before, .jp-type-single .jp-progress .jp-play-bar:before, .jp-volume-bar-value::before,.apwp-jplayer-design-overide .jp-type-single .jp-details, .apwp-jplayer-design-overide .controller-common, .apwp-jplayer-design-overide .jp-play-bar, .jp-volume-bar-value, .apwp-jplayer-design-overide .jp-state-playing .jp-play{background:#203360;}.apwp-jplayer-design-overide .jp-state-looped .jp-repeat::before, .apwp-jplayer-design-overide .jp-volume-controls button::before{color:#203360;}.jp-details .jp-title {color:#ffffff;font-size:20px;}
+.album-art-block {display:none;}
+.apwp-jplayer-design-overide .audio-controller-wrap {
+ padding: 20px 20px 10px 20px;
+ background: #000000!important;
+ min-height: 150px;
+ margin-bottom: 5px;
+}

@@ -1,0 +1,272 @@
+jQuery(document).ready(function($){
+
+	var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	var $header = $('#site-header');
+	var $backgroundContent = $('#site-header, #main-content, #contact, #newsletter');
+	var lastLyricsTrigger = null;
+
+	function getFocusableElements($container) {
+		return $container.find('a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])').filter(':visible');
+	}
+
+	function trapFocus($container, e) {
+		var $focusable = getFocusableElements($container);
+		if (!$focusable.length) {
+			return;
+		}
+
+		var first = $focusable.first()[0];
+		var last = $focusable.last()[0];
+
+		if (e.shiftKey && document.activeElement === first) {
+			e.preventDefault();
+			last.focus();
+		} else if (!e.shiftKey && document.activeElement === last) {
+			e.preventDefault();
+			first.focus();
+		}
+	}
+
+	function setBackgroundHidden(isHidden) {
+		if (isHidden) {
+			$backgroundContent.attr('aria-hidden', 'true');
+		} else {
+			$backgroundContent.removeAttr('aria-hidden');
+		}
+	}
+
+	// Merch / product title equal heights
+	function equalizeMerchTitles() {
+		var $titles = $('.merch h4');		
+
+		if ($titles.length === 0) return;
+
+		// 1. Reset heights so we can measure natural height again
+		$titles.css('height', 'auto');
+
+		// 2. Find the tallest one
+		var highestBox = 0;
+		$titles.each(function() {
+			var h = $(this).height();
+			if (h > highestBox) {
+				highestBox = h;
+			}
+		});
+
+		// 3. Apply the height
+		if (highestBox > 0) {
+			$titles.height(highestBox);
+		}
+	}
+
+	// Run on initial load
+	$(document).ready(function() {
+		equalizeMerchTitles();
+	});
+
+	// Run on resize (with simple debounce for performance)
+	var resizeTimer;
+	$(window).on('resize', function() {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(equalizeMerchTitles, 150);
+	});
+
+	// Fixed navbar background on scroll
+	if ($header.length) {
+		function updateHeaderScroll() {
+			if (window.pageYOffset > 50) {
+				$header.addClass('scrolled');
+			} else {
+				$header.removeClass('scrolled');
+			}
+		}
+		updateHeaderScroll();
+		$(window).on('scroll', updateHeaderScroll);
+	}
+
+	// Smooth scroll for in-page anchor links (offset for fixed header)
+	$('a[href^="#"]').on('click', function(e){
+		var targetId = $(this).attr('href');
+		if (targetId.length <= 1) {
+			return;
+		}
+		var $target = $(targetId);
+		if ($target.length) {
+			e.preventDefault();
+			var headerHeight = $header.length ? $header.outerHeight() : 0;
+			var scrollTop = $target.offset().top - headerHeight;
+
+			if (prefersReducedMotion) {
+				$('html, body').scrollTop(scrollTop);
+			} else {
+				$('html, body').animate({
+					scrollTop: scrollTop
+				}, 600);
+			}
+
+			if (!$target.attr('tabindex')) {
+				$target.attr('tabindex', '-1');
+			}
+			$target.focus({ preventScroll: true });
+
+			if (window.history && window.history.replaceState) {
+				window.history.replaceState(null, '', targetId);
+			}
+		}
+	});
+
+	// Welcome overlay
+	var $welcomeOverlay = $('#welcome-overlay');
+
+	if ($welcomeOverlay.length) {
+		$('body').addClass('has-welcome-overlay');
+		setBackgroundHidden(true);
+
+		var $welcomeFocusTarget = $welcomeOverlay.find('.welcome-overlay-cta, .welcome-overlay-enter').first();
+		if ($welcomeFocusTarget.length) {
+			$welcomeFocusTarget.focus();
+		}
+
+		function dismissWelcome() {
+			setBackgroundHidden(false);
+
+			var finish = function() {
+				$('body').removeClass('has-welcome-overlay');
+				$welcomeOverlay.remove();
+			};
+
+			if (prefersReducedMotion) {
+				$welcomeOverlay.hide();
+				finish();
+			} else {
+				$welcomeOverlay.fadeOut(400, finish);
+			}
+		}
+
+		$('.welcome-overlay-enter').on('click', function(e) {
+			e.preventDefault();
+			dismissWelcome();
+		});
+
+		$welcomeOverlay.on('keydown', function(e) {
+			if (e.key === 'Escape') {
+				e.preventDefault();
+				dismissWelcome();
+			}
+			if (e.key === 'Tab') {
+				trapFocus($welcomeOverlay, e);
+			}
+		});
+	}
+
+	// Lyrics overlay
+	function openLyrics($trigger, $overlay) {
+		lastLyricsTrigger = $trigger;
+		setBackgroundHidden(true);
+		$overlay.attr('aria-hidden', 'false');
+
+		var showContent = function() {
+			$('.lyrics_content', $overlay).css('opacity', 1);
+			$('.lyrics_close', $overlay).focus();
+		};
+
+		if (prefersReducedMotion) {
+			$overlay.show();
+			showContent();
+		} else {
+			$overlay.fadeIn(250).promise().done(function(){
+				$('.lyrics_content', $overlay).fadeTo(250, 1, showContent);
+			});
+		}
+	}
+
+	function closeLyrics($overlay) {
+		var finish = function() {
+			$overlay.hide().attr('aria-hidden', 'true');
+			setBackgroundHidden(false);
+			$('.lyrics_content', $overlay).css('opacity', 0);
+			$('.song_lyric_block').each(function(){
+				$(this).removeAttr('style');
+			});
+			if (lastLyricsTrigger && lastLyricsTrigger.length) {
+				lastLyricsTrigger.focus();
+			}
+			lastLyricsTrigger = null;
+		};
+
+		if (prefersReducedMotion) {
+			finish();
+		} else {
+			$('.lyrics_content', $overlay).fadeTo(250, 0).promise().done(function(){
+				$overlay.fadeOut(250, finish);
+			});
+		}
+	}
+
+	$('.open_lyrics').on('click', function(e){
+		e.preventDefault();
+		var overlayId = $(this).attr('aria-controls');
+		var $overlay = overlayId ? $('#' + overlayId) : $($(this).data('target'));
+		openLyrics($(this), $overlay);
+		return false;
+	});
+
+	$('.lyrics_close').on('click', function(){
+		var overlay_target = $(this).data('target');
+		closeLyrics($(overlay_target));
+	});
+
+	$('.lyrics_overlay').on('keydown', function(e) {
+		var $overlay = $(this);
+
+		if (e.key === 'Escape' && $overlay.is(':visible')) {
+			e.preventDefault();
+			closeLyrics($overlay);
+		}
+		if (e.key === 'Tab' && $overlay.is(':visible')) {
+			trapFocus($overlay, e);
+		}
+	});
+
+	$('.song_lyric_entry').on('click', function(){
+		var target = $(this).data('target');
+		var $this = $(this);
+
+		var activateSong = function() {
+			$(target).addClass('active');
+			$('.song_lyric_entry').removeClass('active');
+			$this.addClass('active');
+		};
+
+		if (prefersReducedMotion) {
+			$('.song_lyric_block.active').removeClass('active');
+			activateSong();
+		} else {
+			$('.song_lyric_block.active').fadeOut(250).promise().done(function(){
+				$(this).removeClass('active');
+				activateSong();
+			});
+		}
+
+		if ($(this).parent('.lyric_tracklist').hasClass('mobile')) {
+			var $tracklist = $(this).parent('.lyric_tracklist');
+			if (prefersReducedMotion) {
+				$tracklist.css('left', '-100%');
+			} else {
+				$tracklist.animate({ left: '-100%' }, 250);
+			}
+		}
+	});
+
+	// Mobile lyrics songlist
+	$('.mobile_open_songlist').on('click', function(){
+		var target = $(this).parents('.lyrics_content').find('.lyric_tracklist');
+		$(target).addClass('mobile');
+		if (prefersReducedMotion) {
+			$(target).css('left', '0px');
+		} else {
+			$(target).animate({ left: '0px' }, 250);
+		}
+	});
+
+});

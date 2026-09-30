@@ -1,0 +1,71 @@
+(function( $ ) {
+	$.fn.my_magicline = function() {
+		var $my_el, my_leftPos, my_newWidth;
+		this.append("<li class='magic-parent'><a id='magic-line' href=''>&nbsp;");
+		var $magicLine = $("#magic-line");
+		if($("li a.active", this).length > 0){
+		$magicLine.width($("li a.active", this).width())
+		.css("left", $("li a.active", this).position().left)
+		.data("origLeft", $("li a.active", this).position().left)
+		.data("origWidth", $("li a.active", this).width());
+		}else{
+		$magicLine.width(0).css("left", 0).data("origLeft", 0).data("origWidth", 0);
+		}
+			$("li a", this).hover(function(){
+			$my_el = $(this);
+			my_leftPos = $my_el.position().left;
+			my_newWidth = $my_el.width();
+			$magicLine.stop().animate({
+			left: my_leftPos,
+			width: my_newWidth
+			},400);
+		},function(){
+			$magicLine.stop().animate({
+			left: $magicLine.data("origLeft"),
+			width: $magicLine.data("origWidth")
+			});
+		});
+	};
+})( jQuery );
+
+(function( $ ) {
+	$.fn.mymusic_magicline = function() {
+		var $my_el, my_leftPos, my_newWidth;
+		this.append("<li class='magic-parent'><a id='music-magic-line' href=''>&nbsp;");
+		var $magicLine = $("#music-magic-line");
+		if($("li a.active", this).length > 0){
+		$magicLine.width($("li a.active", this).width())
+		.css("left", $("li a.active", this).position().left)
+		.data("origLeft", $("li a.active", this).position().left)
+		.data("origWidth", $("li a.active", this).width());
+		}else{
+		$magicLine.width(0).css("left", 0).data("origLeft", 0).data("origWidth", 0);
+		}
+			$("li a", this).hover(function(){
+			$my_el = $(this);
+			my_leftPos = $my_el.position().left;
+			my_newWidth = $my_el.width();
+			$magicLine.stop().animate({
+			left: my_leftPos,
+			width: my_newWidth
+			});
+		},function(){
+			$magicLine.stop().animate({
+			left: $magicLine.data("origLeft"),
+			width: $magicLine.data("origWidth")
+			});
+		});
+	};
+})( jQuery );
+jQuery(window).bind("load", function(){
+	$("#block-views-block-music-v1-block-1 .dvd-desc").mCustomScrollbar({
+        mouseWheel: true,
+        scrollInertia: 0,
+        scrollButtons: {
+            enable: true
+        }
+    });
+	$(".view-categories .view-content ul").my_magicline();
+    $(".path-music #block-acq-starterm-copy-2-system-main .view-header .album-category-header").mymusic_magicline();
+});
+ 

@@ -1,0 +1,23 @@
+/* Featured collection sections: vertical padding and textured backgrounds (desktop/mobile) */
+.section-template--27815670284605__featured_collection-padding {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-template--27815670284605__featured_collection-padding {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+#shopify-section-template--27815670284605__featured_collection .collection {background-image: url("https://cdn.shopify.com/s/files/1/0981/2584/0701/files/Tool_BG_Homepage_01.jpg"); background-repeat: no-repeat; background-position: center bottom; background-size: 100% auto;} @media (max-width: 750px) {#shopify-section-template--27815670284605__featured_collection .collection {background-image: url("https://cdn.shopify.com/s/files/1/0981/2584/0701/files/Tool_BG_HomepageXS_01.jpg"); }}
+.section-template--27815670284605__featured_collection_bDnQae-padding {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-template--27815670284605__featured_collection_bDnQae-padding {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+#shopify-section-template--27815670284605__featured_collection_bDnQae .collection {background-image: url("https://cdn.shopify.com/s/files/1/0981/2584/0701/files/Tool_BG_Homepage_02.jpg"); background-repeat: no-repeat; background-position: center top; background-size: 100% auto; background-attachment: fixed;} @media (max-width: 750px) {#shopify-section-template--27815670284605__featured_collection_bDnQae .collection {background-image: url("https://cdn.shopify.com/s/files/1/0981/2584/0701/files/Tool_BG_HomepageXS_02.jpg"); }}

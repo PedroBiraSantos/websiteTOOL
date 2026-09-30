@@ -1,0 +1,8 @@
+/* iso4 theme style.css (by Nathan Staines, Starkers-based): clearfix helper; its @imports are linked separately */
+.clearfix:after {
+	content:  ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}

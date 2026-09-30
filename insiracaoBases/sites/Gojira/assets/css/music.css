@@ -1,0 +1,140 @@
+/* Music section: album carousel, titles, sub-text, GET IT NOW button, arrow placement, background art */
+#block-bartik-views-block-music-v1-block-4 {
+    position: relative;
+    width: 100%;
+    padding-top: 2.6563vw;
+}
+div#music {
+    display: block;
+    text-align: center;
+    font-size: 2.0833vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2083vw;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+.music_BG_section {
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+}
+.music_desktop_image {
+    display: block;
+}
+.music_mobile_image {
+    display: none;
+}
+.music_desktop_image img {
+    object-fit: cover;
+}
+#block-bartik-views-block-music-v1-block-4 .view-content {
+    width: 36.5625vw;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: 2.2917vw;
+}
+.album_title {
+    margin-top: 1.6146vw;
+    display: block;
+    text-align: center;
+    font-size: 2.0833vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2083vw;
+    color: #ffffff;
+}
+.album_sub_text {
+    margin-top: 0.5208vw;
+    text-align: center;
+    font-size: 1.2500vw;
+    letter-spacing: 0.1250vw;
+}
+.album_listen_button {
+    margin: 0 auto;
+    margin-top: 1.3021vw;
+    width: 7.8646vw;
+    height: 3.3438vw;
+    line-height: 2.3438vw;
+}
+.album_listen_button a {
+    display: block;
+    text-align: center;
+    border: 1px solid #75929E;
+    font-size: 0.8333vw;
+    letter-spacing: 0.0833vw;
+    text-transform: uppercase;
+}
+#block-bartik-views-block-music-v1-block-4 .owl-prev {
+    width: 1.1302vw;
+    position: absolute;
+    top: 34%;
+    left: -3.5vw;
+}
+#block-bartik-views-block-music-v1-block-4 .owl-next {
+    width: 1.1302vw;
+    position: absolute;
+    top: 34%;
+    right: -3.5vw;
+}
+#block-bartik-views-block-music-v1-block-4 .owl-prev:hover,
+#block-bartik-views-block-music-v1-block-4 .owl-next:hover {
+    opacity: .6;
+}
+#block-bartik-views-block-music-v1-block-4 .owl-prev img,
+#block-bartik-views-block-music-v1-block-4 .owl-next img {
+    width: 100%;
+}
+@media only screen and (max-width:1024px) and (orientation:portrait) {
+    div#music {
+        padding-top: 16.6480vw;
+        font-size: 9.0667vw;
+        letter-spacing: 0.9067vw;
+    }
+    .music_BG_section {
+        position: relative;
+        top: unset;
+        left: unset;
+        margin-top: 13.8667vw;
+    }
+    #block-bartik-views-block-music-v1-block-4 .view-content {
+        margin-top: 5.3333vw;
+        width: 89.8667vw;
+    }
+    .album_title {
+        margin-top: 5.3333vw;
+        font-size: 9.0667vw;
+        letter-spacing: 0.9067vw;
+        line-height: normal;
+    }
+    .album_sub_text {
+        margin-top: 1.3333vw;
+        font-size: 6.4000vw;
+        letter-spacing: 0.64vw;
+    }
+    .album_listen_button {
+        margin-top: 5.3333vw;
+        width: 29.0667vw;
+        height: 8.0000vw;
+        line-height: 8.0000vw;
+    }
+    .album_listen_button a {
+        font-size: 3.2000vw;
+        letter-spacing: 0.32000vw;
+    }
+    .music_desktop_image {
+        display: none;
+    }
+    .music_mobile_image {
+        display: block;
+    }
+    #block-bartik-views-block-music-v1-block-4 .owl-prev {
+        width: 2.4507vw;
+        left: -4vw;
+    }
+    #block-bartik-views-block-music-v1-block-4 .owl-next {
+        width: 2.4507vw;
+        right: -4vw;
+    }
+}

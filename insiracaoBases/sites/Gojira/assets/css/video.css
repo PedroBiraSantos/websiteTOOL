@@ -1,0 +1,194 @@
+/* Video section: carousel frame, fade-in on owl-loaded, play button + title overlay, arrows, MORE VIDEOS button */
+div#block-bartik-views-block-video-v1-block-3 {
+    position: relative;
+    width: 100%;
+    background: url(/sites/g/files/g2000023136/files/2026-06/Video_bg_tzsvpwd1.webp) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+div#video {
+    padding-top: 3.8021vw;
+    font-size: 2.0833vw;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2083vw;
+}
+div#block-bartik-views-block-video-v1-block-3 .view-content {
+    width: 66.7708vw;
+    margin: 0 auto;
+    margin-top: 2.1875vw;
+}
+a.preplay {
+    position: absolute;
+    bottom: 1.5885vw;
+    left: 1.5885vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5734vw;
+    z-index: 99;
+    cursor: pointer;
+}
+.video-wrapper {
+    position: relative;
+}
+div#iconid {
+    width: 1.7188vw;
+}
+.videoTitle {
+    display: block;
+    font-size: 1.2500vw;
+    letter-spacing: 0.12500vw;
+    text-transform: uppercase;
+}
+a.videoimage {
+    position: relative;
+}
+a.preplay:hover {
+    opacity: .6;
+}
+.view_more_section {
+    margin: 0 auto;
+    margin-top: 1.3542vw;
+    text-align: center;
+    width: 8.6979vw;
+    height: 2.3438vw;
+    line-height: 2.3438vw;
+    margin-bottom: 6.6667vw
+}
+.view_more_section a {
+    text-transform: uppercase;
+    font-size: 0.8333vw;
+    letter-spacing: 0.08333vw;
+    border: 1px solid #75929E;
+    display: block;
+}
+a.videoimage:hover {
+    opacity: 1;
+}
+.video-embed-id.active iframe {
+    width: 100%;
+    min-height: 37.5521vw;
+}
+.owl-carousel .owl-nav .owl-prev img,
+.owl-carousel .owl-nav .owl-next img {
+    width: auto
+}
+div#block-bartik-views-block-video-v1-block-3 .view-content.owl-carousel {
+    position: relative;
+}
+div#block-bartik-views-block-video-v1-block-3 .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+div#block-bartik-views-block-video-v1-block-3 .owl-nav .owl-prev,
+div#block-bartik-views-block-video-v1-block-3 .owl-nav .owl-next {
+    pointer-events: auto;
+    border: none !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0 !important;
+}
+div#block-bartik-views-block-video-v1-block-3 .owl-nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+div#block-bartik-views-block-video-v1-block-3 .owl-nav-btn img {
+    width: 1.1339vw;
+    height: auto;
+    display: block;
+}
+div#block-bartik-views-block-video-v1-block-3 .owl-nav .owl-prev:hover,
+div#block-bartik-views-block-video-v1-block-3 .owl-nav .owl-next:hover {
+    opacity: 0.6;
+}
+div#block-bartik-views-block-video-v1-block-3 .owl-nav .owl-prev {
+    margin-left: -4vw;
+}
+div#block-bartik-views-block-video-v1-block-3 .owl-nav .owl-next {
+    margin-right: -4vw;
+}
+div#block-bartik-views-block-video-v1-block-3 .view-content {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+div#block-bartik-views-block-video-v1-block-3 .view-content.owl-loaded {
+    opacity: 1;
+}
+.video-wrapper .preplay,
+.video-wrapper .videoimage,
+.video-wrapper .video-play {
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+@media only screen and (max-width:1024px) and (orientation:portrait) {
+    div#block-bartik-views-block-video-v1-block-3 {
+        min-height: 60vh;
+    }
+    div#video {
+        padding-top: 13.4667vw;
+        font-size: 9.0667vw;
+        letter-spacing: 0.9067vw;
+    }
+    div#block-bartik-views-block-video-v1-block-3 .view-content {
+        margin-top: 5.3333vw;
+        width: 89.8667vw;
+    }
+    div#block-bartik-views-block-video-v1-block-3 .owl-nav-btn img {
+        width: 2.4507vw;
+    }
+    div#block-bartik-views-block-video-v1-block-3 .owl-nav .owl-prev {
+        margin-left: -9.5vw;
+    }
+    div#block-bartik-views-block-video-v1-block-3 .owl-nav .owl-next {
+        margin-right: -9.5vw;
+    }
+    a.preplay {
+        bottom: 2.6667vw;
+        left: 2.6667vw;
+        gap: 1.4293vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div#iconid {
+        width: 2.5707vw;
+    }
+    .videoTitle {
+        font-size: 2.6667vw;
+        letter-spacing: 0.2667vw;
+    }
+    .video-embed-id.active iframe {
+        min-height: unset;
+        max-height: 50.4000vw;
+    }
+    .view_more_section {
+        margin-top: 10.6667vw;
+        margin-bottom: 2.5520vw;
+        width: 31.7333vw;
+        height: 8.0000vw;
+        line-height: 8.0000vw;
+    }
+    .view_more_section a {
+        font-size: 3.2000vw;
+        letter-spacing: 0.3200vw;
+    }
+}

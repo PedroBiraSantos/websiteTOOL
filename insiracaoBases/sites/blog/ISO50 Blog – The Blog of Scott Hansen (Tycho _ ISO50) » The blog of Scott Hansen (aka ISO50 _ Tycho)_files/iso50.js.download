@@ -1,0 +1,16 @@
+//$(document).ready(function(){
+//	var id = 'SO';
+//	var scriptString = '<script type="text/javascript" src="' + 'http://www.northmay.com/deck/deck' + id + '_js.php?' + (new Date().getTime()) + '"></script>'
+//	$('.midad').prepend(scriptString);
+//});
+
+$(document).ready(function(){
+	$('#masthead-slideshow').bjqs({
+		'width' : 450,
+		'height' : 170,
+		'animation' : 'slide',
+		'animationDuration' : 700,
+		'showControls' : false,
+		'useCaptions' : false
+	});
+});
