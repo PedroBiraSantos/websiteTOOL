@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protótipo de design · Arquivo Anatômico</title>
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..400,0..100,0..1;1,9..144,300..400,0..100,0..1&family=IBM+Plex+Mono:wght@300;400;500&family=Mulish:ital,wght@0,300;0,400;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-abertura>
+
+<a class="pular t-rotulo" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- Plano 0: Fundo fixo -->
+<div class="fundo-fixo midia" aria-hidden="true">
+  <img src="../insiracaoBases/imagens/7721fac7992819d5571d78e0ac1fa66c.jpg" alt="">
+</div>
+
+<!-- Plano 6: Header -->
+<header class="header header--transparente">
+  <div class="header__interno">
+    <nav class="nav-grupo nav-grupo--esq" aria-label="Seções (esquerda)">
+      <a class="t-nav h-texto" href="#">História</a>
+      <a class="t-nav h-texto" href="#">Discografia</a>
+    </nav>
+    <a class="wordmark t-wordmark" href="#topo" aria-label="Início">TOOL</a>
+    <nav class="nav-grupo nav-grupo--dir" aria-label="Seções (direita)">
+      <a class="t-nav h-texto" href="#">Integrantes</a>
+      <a class="t-nav h-texto" href="#">Arquivo</a>
+    </nav>
+    <button class="menu-botao t-nav h-texto" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <div class="veio veio--A" aria-hidden="true"><span class="pulso"></span><span class="pulso"></span><span class="pulso"></span></div>
+</header>
+
+<!-- Plano 7: Menu de tela cheia (< 960px) -->
+<div class="menu" id="menu" aria-hidden="true">
+  <ol class="menu__lista">
+    <li><a class="menu__item atual" href="#topo" aria-current="page"><span class="t-rotulo menu__num">01</span><span class="t-menu">Início</span></a></li>
+    <li><a class="menu__item" href="#"><span class="t-rotulo menu__num">02</span><span class="t-menu">História</span></a></li>
+    <li><a class="menu__item" href="#"><span class="t-rotulo menu__num">03</span><span class="t-menu">Discografia</span></a></li>
+    <li><a class="menu__item" href="#"><span class="t-rotulo menu__num">04</span><span class="t-menu">Integrantes</span></a></li>
+    <li><a class="menu__item" href="#"><span class="t-rotulo menu__num">05</span><span class="t-menu">Arquivo</span></a></li>
+  </ol>
+</div>
+
+<main id="conteudo" tabindex="-1">
+
+  <!-- ═══ PLACA: Abertura ═══ -->
+  <section class="abertura" id="topo" aria-label="Abertura">
+    <div class="abertura__midia midia">
+      <video class="abertura__video" autoplay muted loop playsinline preload="auto" aria-hidden="true"
+             poster="../assets/videos/hero/hero2-poster.jpg">
+        <source src="../assets/videos/hero/hero2-web.mp4" type="video/mp4">
+      </video>
+      <div class="abertura__veu"></div>
+    </div>
+    <div class="abertura__texto">
+      <div class="abertura__conteudo">
+        <p class="t-rotulo cor-osso" data-seq style="--i:0">Protótipo · Registro 00 — 00</p>
+        <h1 class="t-display-xl" data-seq style="--i:1">Título provisório da abertura</h1>
+        <p class="t-lead" data-seq style="--i:2">Uma frase curta de apoio, com até vinte palavras, só para medir o peso do lead sobre a imagem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ponte: faixa preta que dissolve para o Fundo fixo -->
+  <div class="abertura__ponte" aria-hidden="true"></div>
+
+  <!-- ═══ REGIÃO DE BLOCO 1: Coluna + Marginália (índice estático + lista) ═══ -->
+  <section class="regiao regiao--bloco" data-topo="dissolve" data-base="dissolve">
+    <div class="lamina" aria-hidden="true"><div class="lamina__corpo"></div></div>
+    <div class="bloco bloco--duplo">
+      <div class="veio-v" aria-hidden="true"><span class="pulso-v"></span><span class="pulso-v"></span></div>
+
+      <div class="coluna">
+        <article class="entrada" data-revelar>
+          <div class="meta t-rotulo"><span>Entrada · 00</span><span>0000 — 0000</span></div>
+          <h2 class="t-h2">Um título de entrada com duas linhas para testar a escala</h2>
+          <p class="t-lead">Parágrafo de abertura em peso leve. Ele existe para avaliar a relação entre o lead e o corpo, e a largura máxima de sessenta caracteres.</p>
+          <p>Texto corrido provisório. Esta coluna recebe o conteúdo principal da página e precisa ser confortável de ler sobre a Lâmina, que deixa o fundo transparecer muito de leve. O parágrafo limita-se a cerca de sessenta e seis caracteres por linha, enquanto as figuras ocupam a largura toda da Coluna. Um <a class="link" href="#">link no corpo do texto</a> aparece sublinhado por uma linha fina.</p>
+          <p>Segundo parágrafo provisório, com <em>ênfase em itálico</em> e um nome de obra como <em>Título Fictício</em>, para verificar o itálico da fonte de leitura. A distância entre parágrafos é de um em.</p>
+        </article>
+
+        <figure class="figura figura--cena" data-revelar>
+          <div class="figura__midia midia"><img class="papel-cena" src="../insiracaoBases/imagens/show1.jpg" alt="Foto de show (placeholder)" width="640" height="640"></div>
+          <figcaption class="t-legenda"><span class="t-legenda__pre">FIG. 01</span> — Legenda provisória de uma Cena com Membrana · crédito</figcaption>
+        </figure>
+
+        <p data-revelar>Mais um trecho de texto curto antes da ação. O botão colchete aparece no máximo uma vez por viewport.</p>
+        <p class="acao" data-revelar><a class="botao" href="#albuns">Ver discografia</a></p>
+      </div>
+
+      <aside class="marginalia" aria-label="Índice de seções">
+        <p class="t-rotulo cor-osso marginalia__rotulo">Seções</p>
+        <ul class="indice" data-cascata>
+          <li data-revelar><a class="item" href="#">
+            <span class="item__mini midia"><img class="papel-doc" src="../insiracaoBases/imagens/1e70b73fa0c9cf8d2375a94ed056b8a1.jpg" alt=""></span>
+            <span class="item__linha"><span class="t-rotulo item__num">01</span><span class="t-item item__titulo">História</span></span>
+          </a></li>
+          <li data-revelar><a class="item" href="#">
+            <span class="item__mini midia"><img class="papel-capa" src="../insiracaoBases/albuns/Lateralus.jpg" alt=""></span>
+            <span class="item__linha"><span class="t-rotulo item__num">02</span><span class="t-item item__titulo">Discografia</span></span>
+          </a></li>
+          <li data-revelar><a class="item" href="#">
+            <span class="item__mini midia"><img class="papel-retrato" src="../insiracaoBases/integrantes/DannyCarey3.jpg" alt="" style="object-position:50% 30%"></span>
+            <span class="item__linha"><span class="t-rotulo item__num">03</span><span class="t-item item__titulo">Integrantes</span></span>
+          </a></li>
+          <li data-revelar><a class="item" href="#">
+            <span class="item__mini midia"><img class="papel-doc" src="../insiracaoBases/imagens/ced314abb6d534d0afc1575f47b1ccbe.jpg" alt=""></span>
+            <span class="item__linha"><span class="t-rotulo item__num">04</span><span class="t-item item__titulo">Arquivo de peças catalogadas com um título longo</span></span>
+          </a></li>
+        </ul>
+
+        <p class="t-rotulo cor-osso marginalia__rotulo marginalia__grupo">Lista simples</p>
+        <ul class="lista-simples">
+          <li><a class="h-texto" href="#"><span class="t-numero">0001</span> · <span class="t-item">Álbum I</span></a></li>
+          <li><a class="h-texto" href="#"><span class="t-numero">0002</span> · <span class="t-item">Álbum II</span></a></li>
+          <li><a class="h-texto" href="#"><span class="t-numero">0003</span> · <span class="t-item">Álbum III</span></a></li>
+          <li><a class="h-texto" href="#"><span class="t-numero">0004</span> · <span class="t-item">Álbum IV</span></a></li>
+          <li><a class="h-texto" href="#"><span class="t-numero">0005</span> · <span class="t-item">Álbum V</span></a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══ JANELA ═══ -->
+  <section class="janela" aria-label="Janela">
+    <div class="janela__midia midia" aria-hidden="true">
+      <img src="../insiracaoBases/imagens/5b277abdbb7c49eed65d56d998af0d01.jpg" alt="">
+    </div>
+    <div class="janela__texto">
+      <blockquote class="t-citacao">Uma citação provisória que flutua sozinha</blockquote>
+      <p class="t-rotulo cor-cinza janela__atribuicao">Atribuição · 0000</p>
+    </div>
+  </section>
+
+  <!-- ═══ REGIÃO DE BLOCO 2: entradas + Marginália-índice fixa com marcador ═══ -->
+  <section class="regiao regiao--bloco" data-topo="dissolve" data-base="dissolve">
+    <div class="lamina" aria-hidden="true"><div class="lamina__corpo"></div></div>
+    <div class="bloco bloco--duplo" data-indice-rastreado>
+      <div class="veio-v" aria-hidden="true"><span class="pulso-v"></span><span class="pulso-v"></span></div>
+
+      <div class="coluna">
+        <article class="entrada" id="entrada-1" data-entrada>
+          <div class="meta t-rotulo" data-revelar><span>Era · 01</span><span>0000 — 0000</span></div>
+          <h2 class="t-h2" data-revelar>Primeira entrada rastreada pelo índice</h2>
+          <p data-revelar>Texto provisório. Ao rolar, o item correspondente na Marginália fica ativo, e um pulso de luz desliza pelo Veio vertical até ele. O índice permanece fixo enquanto a região está na tela.</p>
+          <figure class="figura figura--doc" data-revelar>
+            <div class="figura__midia midia"><img class="papel-doc" src="../insiracaoBases/imagens/be57900ae3d902f75fcef9231fffa379.jpg" alt="Pôster (placeholder)" width="678" height="960"></div>
+            <figcaption class="t-legenda"><span class="t-legenda__pre">FIG. 02</span> — Documento: proporção nativa, moldura de 1px, altura máxima 80vh · crédito</figcaption>
+          </figure>
+          <p data-revelar>Parágrafo após a figura, para conferir o espaço de 32px entre a legenda e o texto que segue.</p>
+        </article>
+
+        <div class="veio veio--B veio--capitulo" aria-hidden="true"><span class="pulso"></span><span class="pulso"></span><span class="pulso"></span></div>
+
+        <article class="entrada" id="entrada-2" data-entrada>
+          <div class="meta t-rotulo" data-revelar><span>Era · 02</span><span>0000 — 0000</span></div>
+          <h2 class="t-h2" data-revelar>Segunda entrada com carrossel</h2>
+          <p data-revelar>O carrossel desliza a trilha inteira, sem fade nem escala. As setas ficam fora da janela e a navegação é circular. Use as setas do teclado quando o carrossel estiver em foco.</p>
+
+          <div class="carrossel" style="--cw:620px; --cr:3 / 2" data-carrossel tabindex="0" aria-roledescription="carrossel" aria-label="Fotos ao vivo (placeholder)" data-revelar>
+            <button class="seta seta--ant" type="button" aria-label="Anterior"><svg viewBox="0 0 14 24" aria-hidden="true"><path d="M12 2 2 12l10 10"/></svg></button>
+            <div class="carrossel__janela">
+              <ul class="trilha">
+                <li class="slide midia" data-legenda="FIG. 03 — Cena ao vivo, placeholder · crédito"><img class="papel-cena" src="../insiracaoBases/imagens/show2.jpg" alt="Foto de show (placeholder)"></li>
+                <li class="slide midia" data-legenda="FIG. 04 — Cena ao vivo, placeholder · crédito"><img class="papel-cena" src="../insiracaoBases/integrantes/DannyCarey1.jpg" alt="Foto de show (placeholder)"></li>
+                <li class="slide midia" data-legenda="FIG. 05 — Cena ao vivo, placeholder · crédito"><img class="papel-cena" src="../insiracaoBases/integrantes/Chancellor2.jpg" alt="Foto de show (placeholder)" style="object-position:50% 30%"></li>
+              </ul>
+            </div>
+            <button class="seta seta--prox" type="button" aria-label="Próximo"><svg viewBox="0 0 14 24" aria-hidden="true"><path d="M2 2l10 10L2 22"/></svg></button>
+            <div class="carrossel__info">
+              <p class="t-legenda carrossel__legenda" aria-live="polite"></p>
+              <p class="t-rotulo cor-cinza carrossel__contador"></p>
+            </div>
+          </div>
+
+          <p data-revelar>Texto depois do carrossel.</p>
+        </article>
+
+        <div class="veio veio--C veio--capitulo" aria-hidden="true"><span class="pulso"></span><span class="pulso"></span><span class="pulso"></span></div>
+
+        <article class="entrada" id="entrada-3" data-entrada>
+          <div class="meta t-rotulo" data-revelar><span>Era · 03</span><span>0000 — 0000</span></div>
+          <div class="diptico" data-revelar>
+            <div class="diptico__midia midia"><img class="papel-retrato" src="../insiracaoBases/integrantes/Maynard2.jpg" alt="Retrato (placeholder)" style="object-position:50% 25%"></div>
+            <div class="diptico__texto">
+              <h2 class="t-h2">Díptico: retrato com Membrana</h2>
+              <p class="t-lead">Imagem com 4/10 da Coluna e texto com 6/10, alinhados pelo topo.</p>
+            </div>
+          </div>
+          <h3 class="t-h3" data-revelar>Subtítulo dentro da entrada</h3>
+          <p data-revelar>Abaixo, uma lista de faixas de teste, com números e durações em fonte mono com algarismos tabulares.</p>
+          <ol class="faixas" data-revelar>
+            <li><span class="t-numero">01</span><span class="t-pequeno">Faixa provisória um</span><span class="t-numero">0:00</span></li>
+            <li><span class="t-numero">02</span><span class="t-pequeno">Faixa provisória dois, com um título mais longo</span><span class="t-numero">10:00</span></li>
+            <li><span class="t-numero">03</span><span class="t-pequeno">Faixa provisória três</span><span class="t-numero">1:11</span></li>
+            <li><span class="t-numero">04</span><span class="t-pequeno">Faixa provisória quatro</span><span class="t-numero">8:88</span></li>
+          </ol>
+          <p class="t-rotulo cor-cinza faixas__total" data-revelar>Total · 00:00</p>
+        </article>
+      </div>
+
+      <aside class="marginalia marginalia--indice" aria-label="Índice desta região">
+        <div class="indice-fixo">
+          <span class="indice-fixo__marcador" aria-hidden="true"></span>
+          <p class="t-rotulo cor-osso marginalia__rotulo">Índice</p>
+          <ul class="indice">
+            <li><a class="item" href="#entrada-1" data-alvo="entrada-1">
+              <span class="item__mini midia"><img class="papel-doc" src="../insiracaoBases/imagens/be57900ae3d902f75fcef9231fffa379.jpg" alt=""></span>
+              <span class="item__linha"><span class="t-rotulo item__num">01</span><span class="t-item item__titulo">Primeira entrada</span></span>
+            </a></li>
+            <li><a class="item" href="#entrada-2" data-alvo="entrada-2">
+              <span class="item__mini midia"><img class="papel-cena" src="../insiracaoBases/imagens/show2.jpg" alt=""></span>
+              <span class="item__linha"><span class="t-rotulo item__num">02</span><span class="t-item item__titulo">Segunda entrada</span></span>
+            </a></li>
+            <li><a class="item" href="#entrada-3" data-alvo="entrada-3">
+              <span class="item__mini midia"><img class="papel-retrato" src="../insiracaoBases/integrantes/Maynard2.jpg" alt="" style="object-position:50% 25%"></span>
+              <span class="item__linha"><span class="t-rotulo item__num">03</span><span class="t-item item__titulo">Terceira entrada</span></span>
+            </a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══ PLACA cinematográfica ═══ -->
+  <section class="placa-cine" aria-label="Placa cinematográfica">
+    <div class="placa-cine__midia midia"><img src="../insiracaoBases/integrantes/AdamJones2.jpg" alt="Foto ao vivo (placeholder)" style="object-position:50% 35%"></div>
+    <p class="t-legenda placa-cine__legenda"><span class="t-legenda__pre">FIG. 06</span> — Placa cinematográfica 2.39:1 · crédito</p>
+  </section>
+
+  <!-- ═══ REGIÃO DE BLOCO LARGO: álbum principal + grade ═══ -->
+  <section class="regiao regiao--largo" id="albuns" data-topo="dissolve" data-base="corte">
+    <div class="lamina" aria-hidden="true"><div class="lamina__corpo"></div></div>
+    <div class="bloco">
+      <div class="albuns">
+        <div class="album-principal" data-revelar>
+          <div class="camadas">
+            <div class="atmosfera midia"><img src="../insiracaoBases/albuns/Fear%20Inhumanity.jpeg" alt=""></div>
+            <div class="album-principal__dissolucao"></div>
+            <div class="album-principal__veu"></div>
+            <div class="album-principal__capa midia"><img class="papel-capa" src="../insiracaoBases/albuns/Fear%20Inhumanity.jpeg" alt="Capa (placeholder)"></div>
+          </div>
+          <div class="album-principal__texto">
+            <p class="t-rotulo cor-cinza">Álbum mais recente · 0000</p>
+            <p class="t-album t-album--grande">Álbum principal</p>
+            <p class="t-lead">Uma ou duas linhas provisórias sobre o álbum em destaque.</p>
+            <a class="botao" href="#albuns">Ver álbum</a>
+          </div>
+        </div>
+
+        <ul class="grade-albuns" data-cascata>
+          <li data-revelar><a class="celula" href="#albuns">
+            <span class="camadas">
+              <span class="atmosfera midia"><img src="../insiracaoBases/albuns/Undertow.jpg" alt=""></span>
+              <span class="celula__dissolucao"></span>
+              <span class="celula__capa midia"><img class="papel-capa" src="../insiracaoBases/albuns/Undertow.jpg" alt="Capa (placeholder)"></span>
+            </span>
+            <span class="celula__texto"><span class="t-album">Álbum I</span><span class="t-rotulo cor-cinza">Nº 01</span></span>
+          </a></li>
+          <li data-revelar><a class="celula" href="#albuns">
+            <span class="camadas">
+              <span class="atmosfera midia"><img src="../insiracaoBases/albuns/%C3%86nima.jpg" alt=""></span>
+              <span class="celula__dissolucao"></span>
+              <span class="celula__capa midia"><img class="papel-capa" src="../insiracaoBases/albuns/%C3%86nima.jpg" alt="Capa (placeholder)"></span>
+            </span>
+            <span class="celula__texto"><span class="t-album">Álbum II</span><span class="t-rotulo cor-cinza">Nº 02</span></span>
+          </a></li>
+          <li data-revelar><a class="celula" href="#albuns">
+            <span class="camadas">
+              <span class="atmosfera midia"><img src="../insiracaoBases/imagens/4956b08c27e82846f8b574d02ed316d2.jpg" alt=""></span>
+              <span class="celula__dissolucao"></span>
+              <span class="celula__capa midia"><img class="papel-capa" src="../insiracaoBases/albuns/Lateralus.jpg" alt="Capa (placeholder)"></span>
+            </span>
+            <span class="celula__texto"><span class="t-album">Álbum III</span><span class="t-rotulo cor-cinza">Nº 03</span></span>
+          </a></li>
+          <li data-revelar><a class="celula" href="#albuns">
+            <span class="camadas">
+              <span class="atmosfera midia"><img src="../insiracaoBases/albuns/10%2C000%20Days1.jpg" alt=""></span>
+              <span class="celula__dissolucao"></span>
+              <span class="celula__capa midia"><img class="papel-capa" src="../insiracaoBases/albuns/10%2C000%20Days.jpg" alt="Capa (placeholder)"></span>
+            </span>
+            <span class="celula__texto"><span class="t-album">Álbum IV</span><span class="t-rotulo cor-cinza">Nº 04</span></span>
+          </a></li>
+        </ul>
+      </div>
+      <p class="t-rotulo cor-cinza albuns__tambem">Também · Registro avulso (EP)</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Rodapé -->
+<footer class="rodape">
+  <div class="veio veio--C" aria-hidden="true"><span class="pulso"></span><span class="pulso"></span><span class="pulso"></span></div>
+  <div class="rodape__interno">
+    <div class="rodape__linha">
+      <a class="t-wordmark rodape__wordmark" href="#topo">TOOL</a>
+      <nav class="rodape__nav" aria-label="Rodapé">
+        <a class="t-nav h-texto" href="#">História</a>
+        <a class="t-nav h-texto" href="#">Discografia</a>
+        <a class="t-nav h-texto" href="#">Integrantes</a>
+        <a class="t-nav h-texto" href="#">Arquivo</a>
+        <a class="t-nav h-texto" href="#topo">Topo ↑</a>
+      </nav>
+    </div>
+    <p class="t-legenda cor-cinza rodape__nota">Protótipo de design, descartável. Imagens dos assets do projeto, usadas só para testar composição. Adicione <code>?rosa</code> ao endereço para trocar as imagens por blocos rosa.</p>
+  </div>
+</footer>
+
+<!-- Plano 5: grão -->
+<div class="grao" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
