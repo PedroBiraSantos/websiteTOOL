@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOOL</title>
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..400,0..100,0..1;1,9..144,300..400,0..100,0..1&family=IBM+Plex+Mono:wght@300;400;500&family=Mulish:ital,wght@0,300;0,400;1,400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-abertura>
+
+<a class="pular t-rotulo" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- Fundo fixo (plano 0) -->
+<div class="fundo-fixo" aria-hidden="true">
+  <img src="assets/images/background.jpg" alt="">
+</div>
+
+<!-- ═══ HEADER (compartilhado) ═══ -->
+<header class="header">
+  <div class="header__interno">
+    <nav class="nav-grupo nav-grupo--esq" aria-label="Principal, primeira parte">
+      <a class="t-nav h-texto" href="historia.html">História</a>
+      <a class="t-nav h-texto" href="integrantes.html">Integrantes</a>
+    </nav>
+    <a class="wordmark t-wordmark" href="index.html" aria-label="TOOL, página inicial">TOOL</a>
+    <nav class="nav-grupo nav-grupo--dir" aria-label="Principal, segunda parte">
+      <a class="t-nav h-texto" href="discografia.html">Discografia</a>
+      <a class="t-nav h-texto" href="fanClub.html">Fã-clube</a>
+    </nav>
+    <button class="menu-botao t-nav h-texto" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <div class="veio veio--A" aria-hidden="true"><span class="pulso"></span><span class="pulso"></span><span class="pulso"></span></div>
+</header>
+
+<!-- Menu de tela cheia (< 960px) -->
+<nav class="menu" id="menu" aria-label="Menu" aria-hidden="true" inert>
+  <ol class="menu__lista">
+    <li><a class="menu__item" href="index.html" aria-current="page"><span class="t-rotulo menu__num">01</span><span class="t-menu">Início</span></a></li>
+    <li><a class="menu__item" href="historia.html"><span class="t-rotulo menu__num">02</span><span class="t-menu">História</span></a></li>
+    <li><a class="menu__item" href="integrantes.html"><span class="t-rotulo menu__num">03</span><span class="t-menu">Integrantes</span></a></li>
+    <li><a class="menu__item" href="discografia.html"><span class="t-rotulo menu__num">04</span><span class="t-menu">Discografia</span></a></li>
+    <li><a class="menu__item" href="fanClub.html"><span class="t-rotulo menu__num">05</span><span class="t-menu">Fã-clube</span></a></li>
+  </ol>
+</nav>
+
+<main id="conteudo" tabindex="-1">
+
+  <!-- ═══ 1. HERO: Placa de abertura com vídeo ═══ -->
+  <section class="abertura" id="topo" aria-labelledby="titulo-pagina">
+    <h1 class="visualmente-oculto" id="titulo-pagina">TOOL</h1>
+    <div class="abertura__midia">
+      <video class="abertura__video" autoplay muted loop playsinline preload="auto" aria-hidden="true"
+             poster="assets/videos/hero/hero2-poster.jpg">
+        <source src="assets/videos/hero/hero2-web.mp4" type="video/mp4">
+      </video>
+      <div class="abertura__veu"></div>
+    </div>
+    <div class="abertura__texto">
+      <div class="abertura__conteudo">
+        <blockquote class="t-h1" lang="en" data-seq style="--i:0">
+          <p>So crucify the ego, before it's far too late.</p>
+        </blockquote>
+        <a class="botao" href="fanClub.html" data-seq style="--i:1">Inscreva-se</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faixa preta que dissolve para o Fundo fixo -->
+  <div class="abertura__ponte" aria-hidden="true"></div>
+
+  <!-- ═══ 2–4 + 7. APRESENTAÇÃO: Coluna + Marginália ═══ -->
+  <section class="regiao" data-topo="dissolve" data-base="dissolve" aria-labelledby="titulo-apresentacao">
+    <div class="lamina" aria-hidden="true"><div class="lamina__corpo"></div></div>
+    <div class="bloco bloco--duplo">
+      <div class="veio-v" aria-hidden="true" style="background: rgba(226, 173, 58, 0.78)"><span class="pulso-v"></span><span class="pulso-v"></span></div>
+
+      <div class="coluna">
+        <div class="meta t-rotulo" data-revelar><span>Entrada · 01</span><span>1618 — 0987</span></div>
+        <h2 class="t-h2" id="titulo-apresentacao" data-revelar>Conheça uma das bandas de metal progressivo mais influentes das últimas décadas</h2>
+
+        <div class="texto" data-revelar>
+          <p>Fundada em Los Angeles em 1990, o TOOL é uma das forças mais singulares e influentes do rock e metal progressivo moderno. Liderada pela voz enigmática de Maynard James Keenan, ao lado do guitarrista Adam Jones, do baixista Justin Chancellor e do baterista Danny Carey, a banda transcendeu o formato tradicional do rock pesado ao fundir riffs agressivos com estruturas matemáticas complexas, compassos rítmicos incomuns e uma profunda aura espiritual e filosófica.</p>
+          <p>Mais do que músicos, o TOOL opera como um coletivo artístico multimídia. Seus shows são experiências visuais imersivas e seus videoclipes em stop-motion, concebidos por Adam Jones, tornaram-se marcos da cultura visual dos anos 1990 e 2000. Lançando álbuns raros, porém aclamados pela crítica e pelo público — como os clássicos <em>Ænima</em> (1996) e <em>Lateralus</em> (2001) —, o grupo conquistou quatro prêmios Grammy e uma base de fãs devota com o status de culto, provando que composições longas, enigmáticas e desafiadoras podem sim alcançar o topo das paradas mundiais.</p>
+        </div>
+
+        <!-- 3. GIF do show: figura de Cena com Membrana -->
+        <figure class="figura figura--cena figura--gif" data-revelar>
+          <div class="figura__midia">
+            <img class="papel-cena" src="assets/gifs/show6.gif" alt="Trecho de show do TOOL: a banda no palco durante 46 &amp; 2, na Filadélfia" width="654" height="368" loading="lazy">
+          </div>
+          <figcaption class="t-legenda">《Tool ~ "46 &amp; 2" @ Philadelphia 23'》</figcaption>
+        </figure>
+
+        <!-- 4. Link para História -->
+        <div class="convite" data-revelar>
+          <p>Para conhecer mais sobre a banda TOOL clique no botão abaixo</p>
+          <a class="botao" href="historia.html">ver história</a>
+        </div>
+      </div>
+
+      <!-- 7. Marginália: Seções + Lista de Álbuns (repetida no bloco 2) -->
+      <aside class="marginalia">
+        <nav aria-label="Seções">
+          <p class="t-rotulo cor-osso marginalia__rotulo">Seções</p>
+          <ul class="indice">
+            <li data-revelar><a class="item" href="historia.html">
+              <span class="item__mini"><img class="papel-cena" src="assets/images/historia.jpg" alt="" loading="lazy"></span>
+              <span class="item__linha"><span class="t-rotulo item__num">01</span><span class="t-item item__titulo">História</span></span>
+            </a></li>
+            <li data-revelar><a class="item" href="integrantes.html">
+              <span class="item__mini"><img class="papel-doc" src="assets/images/integrantes.jpg" alt="" loading="lazy" style="object-position:50% 0"></span>
+              <span class="item__linha"><span class="t-rotulo item__num">02</span><span class="t-item item__titulo">Integrantes</span></span>
+            </a></li>
+            <li data-revelar><a class="item" href="discografia.html">
+              <span class="item__mini"><img class="papel-capa" src="assets/images/discografia.jpg" alt="" loading="lazy"></span>
+              <span class="item__linha"><span class="t-rotulo item__num">03</span><span class="t-item item__titulo">Discografia</span></span>
+            </a></li>
+            <li data-revelar><a class="item" href="fanClub.html">
+              <span class="item__mini"><img class="papel-doc" src="assets/images/fanClub.jpeg" alt="" loading="lazy"></span>
+              <span class="item__linha"><span class="t-rotulo item__num">04</span><span class="t-item item__titulo">Fã-clube</span></span>
+            </a></li>
+          </ul>
+        </nav>
+
+        <p class="t-rotulo cor-osso marginalia__rotulo marginalia__grupo" id="lista-albuns-1">Lista de Álbuns</p>
+        <ul class="lista-simples" aria-labelledby="lista-albuns-1">
+          <li><span class="t-numero">1993</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/3Esn6LoXuWtLZNYq8FCzr0?si=r7GJeWXIQu-YL0uP2thjAQ" target="_blank" rel="noopener">Undertow</a></li>
+          <li><span class="t-numero">1996</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/6yWMN087PgSimbcVmHLEwG?si=3lujVQ33SEiQQN9IVVrsMw" target="_blank" rel="noopener">Ænima</a></li>
+          <li><span class="t-numero">2001</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/5l5m1hnH4punS1GQXgEi3T?si=J699UpKrTLCpYofe2Kd9eQ" target="_blank" rel="noopener">Lateralus</a></li>
+          <li><span class="t-numero">2006</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/1fvWYcbjuycyHpzNPH1Vfk?si=w5SnFYfSQnSaj0h-9p66aw" target="_blank" rel="noopener">10,000 Days</a></li>
+          <li><span class="t-numero">2019</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/7acEciVtnuTzmwKptkjth5?si=3yvvg9-7RGioJ8aVDfS2Ig" target="_blank" rel="noopener">Fear Inoculum</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══ 5. JANELA / CITAÇÃO ═══ -->
+  <section class="janela janela--compacta" aria-label="Citação">
+    <div class="janela__midia" aria-hidden="true">
+      <img src="assets/images/background.jpg" alt="">
+    </div>
+    <figure class="janela__texto">
+      <blockquote class="t-citacao" lang="en">
+        <p>This body holding me reminds me of my own mortality. Embrace this moment. Remember: we are eternal, all this pain is an illusion.</p>
+      </blockquote>
+      <figcaption class="t-rotulo janela__atribuicao">Right in Two · 10,000 Days</figcaption>
+    </figure>
+  </section>
+
+  <!-- ═══ 6. BLOCO: turnê 10,000 Days ═══ -->
+  <section class="regiao" data-topo="dissolve" data-base="corte" aria-labelledby="titulo-turne">
+    <div class="lamina" aria-hidden="true"><div class="lamina__corpo"></div></div>
+    <div class="bloco bloco--duplo">
+      <div class="veio-v" aria-hidden="true" style="background: rgba(226, 173, 58, 0.78)"><span class="pulso-v"></span><span class="pulso-v"></span></div>
+
+      <div class="coluna">
+        <div class="meta t-rotulo" data-revelar><span>Entrada · 02</span><span>1618 — 0987</span></div>
+        <h2 class="t-h2" id="titulo-turne" data-revelar>Compilado da turnê 10,000 Days 2006</h2>
+
+        <!-- Vídeo como Placa: carrega o iframe do YouTube só ao clicar -->
+        <div class="placa-video" data-youtube="A-nfVjg9nJA" data-inicio="3260" data-titulo="Compilado da turnê 10,000 Days 2006" data-revelar>
+          <div class="placa-video__quadro">
+            <a class="placa-video__capa" href="https://youtu.be/A-nfVjg9nJA?t=3260" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="https://i.ytimg.com/vi/A-nfVjg9nJA/maxresdefault.jpg" alt="" loading="lazy">
+            </a>
+            <a class="botao placa-video__acao" href="https://youtu.be/A-nfVjg9nJA?t=3260" target="_blank" rel="noopener">Reproduzir vídeo</a>
+          </div>
+        </div>
+
+        <div class="texto" data-revelar>
+          <p>A turnê de 10,000 Days elevou os shows do TOOL ao status de experiência sensorial definitiva. Mais do que promover o álbum de 2006, as apresentações funcionavam como um verdadeiro ritual imersivo, engolindo o público com projeções psicodélicas, lasers e uma atmosfera visual avassaladora.</p>
+          <p>No palco, a banda exibia uma precisão cirúrgica impecável, transformando novos clássicos como "Vicarious" e "The Pot" em momentos catárticos. Foi a turnê que consolidou o TOOL como uma potência ao vivo insuperável, capaz de criar um espetáculo sonoro e visual que nenhuma outra banda no planeta consegue replicar.</p>
+        </div>
+      </div>
+
+      <!-- Marginália: cópia da do bloco 1 -->
+      <aside class="marginalia">
+        <nav aria-label="Seções">
+          <p class="t-rotulo cor-osso marginalia__rotulo">Seções</p>
+          <ul class="indice">
+            <li data-revelar><a class="item" href="historia.html">
+              <span class="item__mini"><img class="papel-cena" src="assets/images/historia.jpg" alt="" loading="lazy"></span>
+              <span class="item__linha"><span class="t-rotulo item__num">01</span><span class="t-item item__titulo">História</span></span>
+            </a></li>
+            <li data-revelar><a class="item" href="integrantes.html">
+              <span class="item__mini"><img class="papel-doc" src="assets/images/integrantes.jpg" alt="" loading="lazy" style="object-position:50% 0"></span>
+              <span class="item__linha"><span class="t-rotulo item__num">02</span><span class="t-item item__titulo">Integrantes</span></span>
+            </a></li>
+            <li data-revelar><a class="item" href="discografia.html">
+              <span class="item__mini"><img class="papel-capa" src="assets/images/discografia.jpg" alt="" loading="lazy"></span>
+              <span class="item__linha"><span class="t-rotulo item__num">03</span><span class="t-item item__titulo">Discografia</span></span>
+            </a></li>
+            <li data-revelar><a class="item" href="fanClub.html">
+              <span class="item__mini"><img class="papel-doc" src="assets/images/fanClub.jpeg" alt="" loading="lazy"></span>
+              <span class="item__linha"><span class="t-rotulo item__num">04</span><span class="t-item item__titulo">Fã-clube</span></span>
+            </a></li>
+          </ul>
+        </nav>
+
+        <p class="t-rotulo cor-osso marginalia__rotulo marginalia__grupo" id="lista-albuns-2">Lista de Álbuns</p>
+        <ul class="lista-simples" aria-labelledby="lista-albuns-2">
+          <li><span class="t-numero">1993</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/3Esn6LoXuWtLZNYq8FCzr0?si=r7GJeWXIQu-YL0uP2thjAQ" target="_blank" rel="noopener">Undertow</a></li>
+          <li><span class="t-numero">1996</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/6yWMN087PgSimbcVmHLEwG?si=3lujVQ33SEiQQN9IVVrsMw" target="_blank" rel="noopener">Ænima</a></li>
+          <li><span class="t-numero">2001</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/5l5m1hnH4punS1GQXgEi3T?si=J699UpKrTLCpYofe2Kd9eQ" target="_blank" rel="noopener">Lateralus</a></li>
+          <li><span class="t-numero">2006</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/1fvWYcbjuycyHpzNPH1Vfk?si=w5SnFYfSQnSaj0h-9p66aw" target="_blank" rel="noopener">10,000 Days</a></li>
+          <li><span class="t-numero">2019</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/7acEciVtnuTzmwKptkjth5?si=3yvvg9-7RGioJ8aVDfS2Ig" target="_blank" rel="noopener">Fear Inoculum</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══ 8. RODAPÉ / NEWSLETTER (compartilhado por todas as páginas) ═══ -->
+<footer class="rodape">
+  <div class="veio veio--C" aria-hidden="true"><span class="pulso"></span><span class="pulso"></span><span class="pulso"></span></div>
+  <div class="rodape__interno">
+    <div class="rodape__linha">
+      <a class="t-wordmark rodape__wordmark" href="index.html">TOOL</a>
+      <nav class="rodape__nav" aria-label="Rodapé">
+        <ul>
+          <li><a class="t-nav h-texto" href="historia.html">História</a></li>
+          <li><a class="t-nav h-texto" href="integrantes.html">Integrantes</a></li>
+          <li><a class="t-nav h-texto" href="discografia.html">Discografia</a></li>
+          <li><a class="t-nav h-texto" href="fanClub.html">Fã-clube</a></li>
+          <li><a class="t-nav h-texto" href="#topo">Topo ↑</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="t-legenda rodape__nota">Projeto acadêmico não oficial. Imagens pertencem a seus autores; créditos nas legendas.</p>
+    <figure class="rodape__epigrafe">
+      <blockquote class="t-h3" lang="en">
+        <p>Repugnant is a creature who would squander the ability to lift an eye to heaven conscious of its fleeting time here.</p>
+      </blockquote>
+      <figcaption class="t-rotulo cor-cinza">Parabola · Lateralus</figcaption>
+    </figure>
+  </div>
+</footer>
+
+<!-- Grão (plano 5) -->
+<div class="grao" aria-hidden="true"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
