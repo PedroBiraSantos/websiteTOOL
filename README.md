@@ -1,3 +1,15 @@
+<div align="center">
+
+<img src="assets/images/logo.png" alt="TOOL" width="220"/>
+
+# TOOL — Fan Website
+
+**Progressive Metal · Alternative Metal · Los Angeles, CA**
+
+[![Live Website](https://img.shields.io/badge/Ver%20Site-ao%20vivo-black?logo=vercel&logoColor=white)](https://websitetool-omega.vercel.app/)
+
+</div>
+
 # TOOL — Fan Website
 
 > 🇧🇷 Português | 🇺🇸 English
