@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fã-clube · TOOL</title>
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..400,0..100,0..1;1,9..144,300..400,0..100,0..1&family=IBM+Plex+Mono:wght@300;400;500&family=Mulish:ital,wght@0,300;0,400;1,400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="pular t-rotulo" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- Fundo fixo (plano 0) -->
+<div class="fundo-fixo" aria-hidden="true">
+  <img src="assets/images/background.jpg" alt="">
+</div>
+
+<!-- ═══ HEADER (compartilhado) ═══ -->
+<header class="header">
+  <div class="header__interno">
+    <nav class="nav-grupo nav-grupo--esq" aria-label="Principal, primeira parte">
+      <a class="t-nav h-texto" href="historia.html">História</a>
+      <a class="t-nav h-texto" href="integrantes.html">Integrantes</a>
+    </nav>
+    <a class="wordmark t-wordmark" href="index.html" aria-label="TOOL, página inicial">TOOL</a>
+    <nav class="nav-grupo nav-grupo--dir" aria-label="Principal, segunda parte">
+      <a class="t-nav h-texto" href="discografia.html">Discografia</a>
+      <a class="t-nav h-texto" href="fanClub.html" aria-current="page">Fã-clube</a>
+    </nav>
+    <button class="menu-botao t-nav h-texto" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <div class="veio veio--A" aria-hidden="true"><span class="pulso"></span><span class="pulso"></span><span class="pulso"></span></div>
+</header>
+
+<!-- Menu de tela cheia (< 960px) -->
+<nav class="menu" id="menu" aria-label="Menu" aria-hidden="true" inert>
+  <ol class="menu__lista">
+    <li><a class="menu__item" href="index.html"><span class="t-rotulo menu__num">01</span><span class="t-menu">Início</span></a></li>
+    <li><a class="menu__item" href="historia.html"><span class="t-rotulo menu__num">02</span><span class="t-menu">História</span></a></li>
+    <li><a class="menu__item" href="integrantes.html"><span class="t-rotulo menu__num">03</span><span class="t-menu">Integrantes</span></a></li>
+    <li><a class="menu__item" href="discografia.html"><span class="t-rotulo menu__num">04</span><span class="t-menu">Discografia</span></a></li>
+    <li><a class="menu__item" href="fanClub.html" aria-current="page"><span class="t-rotulo menu__num">05</span><span class="t-menu">Fã-clube</span></a></li>
+  </ol>
+</nav>
+
+<main id="conteudo" tabindex="-1">
+
+  <!-- ═══ BLOCO ÚNICO: inscrição no fã-clube ═══ -->
+  <section class="regiao regiao--inicio" id="topo" data-topo="corte" data-base="corte" aria-labelledby="titulo-pagina">
+    <div class="lamina" aria-hidden="true"><div class="lamina__corpo"></div></div>
+    <div class="bloco bloco--duplo">
+      <div class="veio-v" aria-hidden="true" style="background: rgba(226, 173, 58, 0.78)"><span class="pulso-v"></span><span class="pulso-v"></span></div>
+
+      <div class="coluna">
+        <div class="meta t-rotulo" data-revelar><span>Entrada · 01</span><span>1618 — 0987</span></div>
+        <h1 class="t-h2" id="titulo-pagina" data-revelar>Fã-clube</h1>
+
+        <form class="form" id="form-inscricao" action="#" method="post" novalidate aria-labelledby="titulo-pagina" data-revelar>
+          <p class="t-legenda form__aviso">Todos os campos são obrigatórios, exceto o álbum favorito.</p>
+
+          <fieldset class="form__grupo">
+            <legend class="t-rotulo">Dados pessoais</legend>
+            <div class="campo">
+              <label class="t-rotulo" for="nome">Nome completo</label>
+              <input class="campo__entrada" id="nome" name="nome" type="text" required aria-describedby="erro-nome" autocomplete="name">
+              <p class="t-legenda campo__erro" id="erro-nome"></p>
+            </div>
+            <div class="campo">
+              <label class="t-rotulo" for="email">E-mail</label>
+              <input class="campo__entrada" id="email" name="email" type="email" required aria-describedby="erro-email" autocomplete="email" placeholder="nome@exemplo.com">
+              <p class="t-legenda campo__erro" id="erro-email"></p>
+            </div>
+            <div class="form__linha">
+            <div class="campo">
+              <label class="t-rotulo" for="nascimento">Data de nascimento</label>
+              <input class="campo__entrada" id="nascimento" name="nascimento" type="text" required aria-describedby="erro-nascimento" inputmode="numeric" autocomplete="bday" placeholder="DD/MM/AAAA" maxlength="10">
+              <p class="t-legenda campo__erro" id="erro-nascimento"></p>
+            </div>
+            <div class="campo">
+              <label class="t-rotulo" for="telefone">Telefone</label>
+              <input class="campo__entrada" id="telefone" name="telefone" type="tel" required aria-describedby="erro-telefone" inputmode="numeric" autocomplete="tel-national" placeholder="(00) 00000-0000" maxlength="15">
+              <p class="t-legenda campo__erro" id="erro-telefone"></p>
+            </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__grupo">
+            <legend class="t-rotulo">Acesso</legend>
+            <div class="form__linha">
+            <div class="campo">
+              <label class="t-rotulo" for="senha">Senha</label>
+              <input class="campo__entrada" id="senha" name="senha" type="password" required aria-describedby="dica-senha erro-senha" autocomplete="new-password" minlength="8">
+              <p class="t-legenda campo__dica" id="dica-senha">Mínimo de 8 caracteres.</p>
+              <p class="t-legenda campo__erro" id="erro-senha"></p>
+            </div>
+            <div class="campo">
+              <label class="t-rotulo" for="confirmacao">Confirmação de senha</label>
+              <input class="campo__entrada" id="confirmacao" name="confirmacao" type="password" required aria-describedby="erro-confirmacao" autocomplete="new-password">
+              <p class="t-legenda campo__erro" id="erro-confirmacao"></p>
+            </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__grupo">
+            <legend class="t-rotulo">Preferências</legend>
+            <div class="campo">
+              <label class="t-rotulo" for="album">Álbum favorito</label>
+              <select class="campo__entrada" id="album" name="album">
+                <option value="">Selecione um álbum</option>
+                <option value="undertow">Undertow (1993)</option>
+                <option value="aenima">Ænima (1996)</option>
+                <option value="lateralus">Lateralus (2001)</option>
+                <option value="10000-days">10,000 Days (2006)</option>
+                <option value="fear-inoculum">Fear Inoculum (2019)</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div class="campo campo--check form__grupo">
+            <input id="termos" name="termos" type="checkbox" required aria-describedby="erro-termos">
+            <label for="termos">Li e aceito os termos de inscrição do fã-clube.</label>
+            <p class="t-legenda campo__erro" id="erro-termos"></p>
+          </div>
+
+          <div class="form__acoes">
+            <button class="botao" type="submit">Inscrever-se</button>
+          </div>
+        </form>
+
+        <div class="form__sucesso" id="form-sucesso" role="status" tabindex="-1" hidden>
+          <div class="veio veio--B" aria-hidden="true"><span class="pulso"></span><span class="pulso"></span><span class="pulso"></span></div>
+          <p class="t-h3">Inscrição realizada com sucesso.</p>
+        </div>
+      </div>
+
+      <aside class="marginalia marginalia--repetida">
+        <div class="marginalia__copia">
+          <nav aria-label="Seções">
+            <p class="t-rotulo cor-osso marginalia__rotulo">Seções</p>
+            <ul class="indice">
+              <li data-revelar><a class="item" href="historia.html">
+                <span class="item__mini"><img class="papel-cena" src="assets/images/historia.jpg" alt="" loading="lazy"></span>
+                <span class="item__linha"><span class="t-rotulo item__num">01</span><span class="t-item item__titulo">História</span></span>
+              </a></li>
+              <li data-revelar><a class="item" href="integrantes.html">
+                <span class="item__mini"><img class="papel-doc" src="assets/images/integrantes.jpg" alt="" loading="lazy" style="object-position:50% 0"></span>
+                <span class="item__linha"><span class="t-rotulo item__num">02</span><span class="t-item item__titulo">Integrantes</span></span>
+              </a></li>
+              <li data-revelar><a class="item" href="discografia.html">
+                <span class="item__mini"><img class="papel-capa" src="assets/images/discografia.jpg" alt="" loading="lazy"></span>
+                <span class="item__linha"><span class="t-rotulo item__num">03</span><span class="t-item item__titulo">Discografia</span></span>
+              </a></li>
+              <li data-revelar><a class="item" href="index.html">
+                <span class="item__mini"><img class="papel-doc" src="assets/images/home.jpeg" alt="" loading="lazy"></span>
+                <span class="item__linha"><span class="t-rotulo item__num">04</span><span class="t-item item__titulo">Home</span></span>
+              </a></li>
+            </ul>
+          </nav>
+
+          <p class="t-rotulo cor-osso marginalia__rotulo marginalia__grupo" id="lista-albuns-1">Lista de Álbuns</p>
+          <ul class="lista-simples" aria-labelledby="lista-albuns-1">
+            <li><span class="t-numero">1993</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/3Esn6LoXuWtLZNYq8FCzr0?si=r7GJeWXIQu-YL0uP2thjAQ" target="_blank" rel="noopener">Undertow</a></li>
+            <li><span class="t-numero">1996</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/6yWMN087PgSimbcVmHLEwG?si=3lujVQ33SEiQQN9IVVrsMw" target="_blank" rel="noopener">Ænima</a></li>
+            <li><span class="t-numero">2001</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/5l5m1hnH4punS1GQXgEi3T?si=J699UpKrTLCpYofe2Kd9eQ" target="_blank" rel="noopener">Lateralus</a></li>
+            <li><span class="t-numero">2006</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/1fvWYcbjuycyHpzNPH1Vfk?si=w5SnFYfSQnSaj0h-9p66aw" target="_blank" rel="noopener">10,000 Days</a></li>
+            <li><span class="t-numero">2019</span> · <a class="t-item h-texto" href="https://open.spotify.com/intl-pt/album/7acEciVtnuTzmwKptkjth5?si=3yvvg9-7RGioJ8aVDfS2Ig" target="_blank" rel="noopener">Fear Inoculum</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══ 8. RODAPÉ / NEWSLETTER (compartilhado por todas as páginas) ═══ -->
+<footer class="rodape">
+  <div class="veio veio--C" aria-hidden="true"><span class="pulso"></span><span class="pulso"></span><span class="pulso"></span></div>
+  <div class="rodape__interno">
+    <div class="rodape__linha">
+      <a class="t-wordmark rodape__wordmark" href="index.html">TOOL</a>
+      <nav class="rodape__nav" aria-label="Rodapé">
+        <ul>
+          <li><a class="t-nav h-texto" href="historia.html">História</a></li>
+          <li><a class="t-nav h-texto" href="integrantes.html">Integrantes</a></li>
+          <li><a class="t-nav h-texto" href="discografia.html">Discografia</a></li>
+          <li><a class="t-nav h-texto" href="fanClub.html">Fã-clube</a></li>
+          <li><a class="t-nav h-texto" href="#topo">Topo ↑</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="t-legenda rodape__nota">Projeto acadêmico não oficial. Imagens pertencem a seus autores; créditos nas legendas.</p>
+    <figure class="rodape__epigrafe">
+      <blockquote class="t-h3" lang="en">
+        <p>Repugnant is a creature who would squander the ability to lift an eye to heaven conscious of its fleeting time here.</p>
+      </blockquote>
+      <figcaption class="t-rotulo cor-cinza">Parabola · Lateralus</figcaption>
+    </figure>
+  </div>
+</footer>
+
+<!-- Grão (plano 5) -->
+<div class="grao" aria-hidden="true"></div>
+
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
