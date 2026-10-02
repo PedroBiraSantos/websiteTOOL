@@ -33,7 +33,37 @@ O site possui páginas dedicadas a:
 - Git / GitHub
 - Vercel
 
-### Estrutura
+## 🇺🇸 English
+
+### About the project
+
+This project is an academic website developed to present the band **TOOL**, exploring its history, discography, members, and visual identity.
+
+The website combines information about the band with a visual experience inspired by the dark, organic, and surreal aesthetic associated with TOOL's artistic identity.
+
+The project was developed using **HTML, CSS, and JavaScript**, without frameworks for the site's main structure.
+
+### Content
+
+The website contains pages dedicated to:
+
+- **Home** — introduction to the band, audiovisual content, quotes, and information.
+- **History** — the history and development of TOOL throughout the years.
+- **Discography** — the band's main studio albums, with information about each release and a reference table.
+- **Members** — information about the members of the band and their roles within TOOL.
+- **Fan Club** — a registration form created to demonstrate form validation using JavaScript.
+
+### Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+- YouTube Embed
+- Git
+- GitHub
+- Vercel
+
+### Project structure
 
 ```text
 websiteTOOL/
@@ -41,18 +71,26 @@ websiteTOOL/
 │   ├── gifs/
 │   ├── images/
 │   └── videos/
+│       └── hero/
 ├── css/
 │   └── style.css
 ├── designPrototype/
 │   ├── index.html
 │   ├── script.js
 │   └── style.css
-├── insiracaoBases/
+├── inspiracaoBases/
 │   ├── albuns/
 │   ├── extracao/
-│   ├── imagens/
+│       ├── reference01
+│       ├── reference02
+│       ├── reference03
+│       └── reference04   
 │   ├── integrantes/
 │   └── sites/
+│       ├── reference01
+│       ├── reference02
+│       ├── reference03
+│       └── reference04 
 ├── js/
 │   └── script.js
 ├── index.html
@@ -60,5 +98,6 @@ websiteTOOL/
 ├── discografia.html
 ├── integrantes.html
 ├── fanClub.html
+├── design-synthesis.md
 ├── DESIGN.md
 └── README.md
